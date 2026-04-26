@@ -1,0 +1,506 @@
+/* Restaurant Industry Page Styles */
+
+/* Hero Section */
+.restaurant-hero {
+  padding: var(--section-padding) 0;
+}
+
+.restaurant-hero::before {
+  display: none;
+}
+
+.restaurant-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.restaurant-hero .overline {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.restaurant-hero h1 {
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.restaurant-hero-subtitle {
+  font-size: clamp(1.125rem, 2vw, 1.375rem);
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.6;
+}
+
+/* Intro Section */
+.restaurant-intro {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.restaurant-intro h2 {
+  margin-bottom: 2rem;
+}
+
+.restaurant-intro-content {
+  text-align: center;
+}
+
+.restaurant-intro-content p {
+  font-size: 1.0625rem;
+  line-height: 1.8;
+  color: var(--color-text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.restaurant-tagline {
+  font-size: 1.25rem;
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+/* Services Grid */
+.restaurant-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.restaurant-service-card {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  transition: all var(--transition-base);
+}
+
+.restaurant-service-card:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+}
+
+.restaurant-industry .service-icon {
+  width: 56px;
+  height: 56px;
+  background: var(--gradient-purple-light);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+  margin-bottom: 1.5rem;
+}
+
+.restaurant-service-card h3 {
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.restaurant-industry .service-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.restaurant-industry .service-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.9375rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.restaurant-industry .service-list li svg {
+  color: var(--color-success);
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+}
+
+/* Framework Section */
+.restaurant-industry .framework-intro {
+  text-align: center;
+  font-size: 1.0625rem;
+  color: var(--color-text-secondary);
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  line-height: 1.8;
+}
+
+.restaurant-industry .framework-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.restaurant-industry .framework-step {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.step-number {
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: var(--font-body);
+  flex-shrink: 0;
+}
+
+.step-content {
+  flex: 1;
+  display: flex;
+  gap: 1.5rem;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  transition: all var(--transition-base);
+}
+
+.step-content:hover {
+  border-color: var(--color-border-dark);
+  box-shadow: var(--shadow-md);
+}
+
+.step-icon {
+  width: 48px;
+  height: 48px;
+  background: var(--gradient-purple-light);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.step-text h3 {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 0.5rem;
+}
+
+.step-text p {
+  font-size: 0.9375rem;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+}
+
+/* Benefits Section */
+.restaurant-industry .benefits-intro {
+  text-align: center;
+  font-size: 1.0625rem;
+  color: var(--color-text-secondary);
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  line-height: 1.8;
+}
+
+.restaurant-industry .benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.restaurant-industry .benefits-card {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+}
+
+.restaurant-industry .benefits-card h3 {
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 1.5rem;
+}
+
+.restaurant-industry .benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.restaurant-industry .benefits-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.9375rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.restaurant-industry .benefits-list li svg {
+  color: var(--color-success);
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+}
+
+.restaurant-industry .benefits-card-warning {
+  background: linear-gradient(135deg, #fef3f2 0%, #fef9f5 100%);
+  border-color: #fed7d7;
+}
+
+.pain-points-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.pain-points-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.9375rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.warning-dot {
+  width: 6px;
+  height: 6px;
+  background: var(--color-warning);
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 0.5rem;
+}
+
+.pain-points-conclusion {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-warning);
+  padding-top: 1rem;
+  border-top: 1px solid #fed7d7;
+}
+
+.restaurant-industry .benefits-footer {
+  text-align: center;
+  font-size: 1.125rem;
+  color: var(--color-text);
+  max-width: 700px;
+  margin: 3rem auto 0;
+  line-height: 1.8;
+}
+
+/* Why Choose Section */
+.restaurant-industry .why-choose-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.restaurant-industry .why-choose-card {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  transition: all var(--transition-base);
+}
+
+.restaurant-industry .why-choose-card:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.restaurant-industry .why-choose-icon {
+  width: 48px;
+  height: 48px;
+  background: var(--gradient-purple-light);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+  margin-bottom: 1.25rem;
+}
+
+.restaurant-industry .why-choose-card h3 {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+}
+
+.restaurant-industry .why-choose-card p {
+  font-size: 0.9375rem;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+}
+
+/* FAQ Section */
+.restaurant-industry .faq-list {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.restaurant-industry .faq-item {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  transition: all var(--transition-base);
+}
+
+.restaurant-industry .faq-item:hover {
+  border-color: var(--color-border-dark);
+  box-shadow: var(--shadow-sm);
+}
+
+.restaurant-industry .faq-item h3 {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+
+.restaurant-industry .faq-item p {
+  font-size: 0.9375rem;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+}
+
+/* CTA Section */
+.restaurant-cta {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 3rem 2rem;
+  background: var(--gradient-purple-light);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+}
+
+.restaurant-cta h2 {
+  margin-bottom: 1.5rem;
+}
+
+.restaurant-cta-text {
+  font-size: 1.0625rem;
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.restaurant-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .restaurant-industry .framework-step {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .step-number {
+    width: 48px;
+    height: 48px;
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .restaurant-hero {
+    padding: clamp(3rem, 8vw, 5rem) 0 clamp(2rem, 4vw, 3rem);
+  }
+
+  .restaurant-services-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .restaurant-industry .framework-steps {
+    gap: 1.5rem;
+  }
+
+  .step-content {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+
+  .restaurant-industry .benefits-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .restaurant-industry .why-choose-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .restaurant-cta {
+    padding: 2rem 1.5rem;
+  }
+
+  .restaurant-cta-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .restaurant-cta-actions .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .restaurant-service-card {
+    padding: 1.5rem;
+  }
+
+  .restaurant-industry .service-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .restaurant-industry .faq-item {
+    padding: 1.5rem;
+  }
+
+  .restaurant-industry .benefits-card {
+    padding: 1.5rem;
+  }
+
+  .restaurant-industry .why-choose-card {
+    padding: 1.5rem;
+  }
+}

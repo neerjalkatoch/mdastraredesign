@@ -1,0 +1,625 @@
+/* Education Industry Page */
+.education-industry {
+  width: 100%;
+}
+
+/* Hero Section */
+.education-hero {
+  padding: var(--section-padding) 0;
+}
+
+.education-hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.education-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 1.5rem;
+}
+
+.education-badge svg {
+  flex-shrink: 0;
+}
+
+.education-hero-content h1 {
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.education-hero-subtitle {
+  font-size: clamp(1.125rem, 2vw, 1.375rem);
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 1.5rem;
+}
+
+.education-hero-description {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+.education-hero-description p {
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.education-hero-description p:last-child {
+  margin-bottom: 0;
+}
+
+.education-hero-content .btn {
+  margin-top: 1rem;
+}
+
+/* Services Section */
+.education-services {
+  background: var(--color-bg);
+}
+
+.education-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.education-service-card {
+  background: var(--color-bg-subtle);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  transition: all var(--transition-base);
+}
+
+.education-service-card:hover {
+  border-color: var(--color-border-dark);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.education-service-icon {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-primary-bg);
+  border-radius: var(--radius-md);
+  color: var(--color-primary);
+  margin-bottom: 1.5rem;
+  transition: all var(--transition-base);
+}
+
+.education-service-card:hover .education-service-icon {
+  background: var(--color-primary);
+  color: #ffffff;
+}
+
+.education-service-title {
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 1.25rem;
+  line-height: 1.3;
+}
+
+.education-service-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.education-service-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.625rem;
+  font-size: 0.9375rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.education-service-list li svg {
+  flex-shrink: 0;
+  margin-top: 0.125rem;
+  color: var(--color-primary);
+}
+
+/* Framework Section */
+.education-framework {
+  background: var(--color-bg-subtle);
+}
+
+.education-industry .framework-intro {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+}
+
+.education-framework-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.education-framework-card {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 2rem 1.75rem;
+  transition: all var(--transition-base);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.education-framework-card:hover {
+  border-color: var(--color-border-dark);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.education-industry .framework-step {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-border);
+  line-height: 1;
+}
+
+.education-industry .framework-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-primary-bg);
+  border-radius: var(--radius-md);
+  color: var(--color-primary);
+  margin-bottom: 1.25rem;
+  transition: all var(--transition-base);
+}
+
+.education-framework-card:hover .framework-icon {
+  background: var(--color-primary);
+  color: #ffffff;
+}
+
+.education-industry .framework-title {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+}
+
+.education-industry .framework-description {
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+/* Benefits Section */
+.education-benefits {
+  background: var(--color-bg);
+}
+
+.education-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.education-benefits-card {
+  background: var(--color-bg-subtle);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem 2rem;
+}
+
+.education-benefits-positive {
+  border-left: 4px solid var(--color-success);
+}
+
+.education-benefits-negative {
+  border-left: 4px solid var(--color-warning);
+}
+
+.education-benefits-card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.75rem;
+}
+
+.education-benefits-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
+  flex-shrink: 0;
+}
+
+.education-benefits-icon-positive {
+  background: #d1fae5;
+  color: var(--color-success);
+}
+
+.education-benefits-icon-negative {
+  background: #fed7aa;
+  color: var(--color-warning);
+}
+
+.education-benefits-card-header h3 {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-text);
+  line-height: 1.4;
+  margin-top: 0.5rem;
+}
+
+.education-benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.education-benefits-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.9375rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.benefit-check {
+  flex-shrink: 0;
+  color: var(--color-success);
+  margin-top: 0.125rem;
+}
+
+.benefit-x {
+  flex-shrink: 0;
+  color: var(--color-warning);
+  margin-top: 0.125rem;
+}
+
+.education-benefits-conclusion {
+  margin-top: 1.75rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.education-benefits-conclusion p {
+  font-size: 0.9375rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+}
+
+.education-benefits-conclusion p:last-child {
+  margin-bottom: 0;
+}
+
+.conclusion-highlight {
+  font-size: 1rem !important;
+  color: var(--color-text) !important;
+}
+
+/* Why Choose Section */
+.education-why-choose {
+  background: var(--color-bg-subtle);
+}
+
+.education-why-choose-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.education-why-choose-card {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 2rem 1.75rem;
+  transition: all var(--transition-base);
+  text-align: center;
+}
+
+.education-why-choose-card:hover {
+  border-color: var(--color-border-dark);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.education-industry .why-choose-icon {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-primary-bg);
+  border-radius: var(--radius-md);
+  color: var(--color-primary);
+  margin: 0 auto 1.25rem;
+  transition: all var(--transition-base);
+}
+
+.education-why-choose-card:hover .why-choose-icon {
+  background: var(--color-primary);
+  color: #ffffff;
+}
+
+.education-industry .why-choose-title {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+}
+
+.education-industry .why-choose-description {
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+/* FAQ Section */
+.education-faq {
+  background: var(--color-bg);
+}
+
+.education-faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.education-faq-item {
+  background: var(--color-bg-subtle);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: all var(--transition-base);
+}
+
+.education-faq-item.open {
+  border-color: var(--color-primary-light);
+  box-shadow: var(--shadow-sm);
+}
+
+.education-faq-trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: transparent;
+  cursor: pointer;
+  transition: background var(--transition-fast);
+}
+
+.education-faq-trigger:hover {
+  background: var(--color-bg-muted);
+}
+
+.education-faq-icon {
+  flex-shrink: 0;
+  color: var(--color-primary);
+}
+
+.education-faq-question {
+  flex: 1;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.education-faq-chevron {
+  flex-shrink: 0;
+  color: var(--color-text-muted);
+  transition: transform var(--transition-base);
+}
+
+.education-faq-item.open .education-faq-chevron {
+  transform: rotate(180deg);
+}
+
+.education-faq-content {
+  padding: 0 1.5rem 1.5rem 3.5rem;
+  overflow: hidden;
+}
+
+.education-faq-content p {
+  font-size: 0.9375rem;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+}
+
+/* CTA Section */
+.education-cta {
+  background: linear-gradient(135deg, #6b21a8 0%, #7c3aed 100%);
+  padding: var(--section-padding) 0;
+}
+
+.education-cta-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff;
+}
+
+.education-cta-content h2 {
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.education-cta-content .text-gradient {
+  background: linear-gradient(135deg, #d946ef 0%, #22d3ee 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.education-cta-content > p {
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.education-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.education-cta .btn-primary {
+  background: #ffffff;
+  color: var(--color-primary);
+}
+
+.education-cta .btn-primary:hover {
+  background: var(--color-primary-bg);
+  color: var(--color-primary-dark);
+}
+
+.education-cta .btn-secondary {
+  border-color: rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+}
+
+.education-cta .btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .education-services-grid,
+  .education-framework-grid,
+  .education-why-choose-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .education-benefits-grid {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .education-hero {
+    padding: clamp(3rem, 8vw, 5rem) 0 clamp(3rem, 6vw, 4rem);
+  }
+
+  .education-badge {
+    font-size: 0.8125rem;
+    padding: 0.4rem 0.875rem;
+  }
+
+  .education-hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .education-hero-description p {
+    font-size: 0.9375rem;
+  }
+
+  .education-services-grid,
+  .education-framework-grid,
+  .education-why-choose-grid,
+  .education-benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .education-service-card,
+  .education-framework-card,
+  .education-why-choose-card,
+  .education-benefits-card {
+    padding: 1.5rem;
+  }
+
+  .education-industry .framework-step {
+    font-size: 1.75rem;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .education-benefits-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .education-benefits-card-header h3 {
+    margin-top: 0;
+  }
+
+  .education-faq-content {
+    padding: 0 1rem 1rem 1rem;
+  }
+
+  .education-cta-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .education-cta-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .education-service-icon,
+  .education-industry .why-choose-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .education-industry .framework-icon,
+  .education-benefits-icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .education-service-title,
+  .education-industry .framework-title,
+  .education-industry .why-choose-title {
+    font-size: 1.0625rem;
+  }
+
+  .education-faq-trigger {
+    padding: 1.25rem;
+  }
+
+  .education-faq-question {
+    font-size: 0.9375rem;
+  }
+}

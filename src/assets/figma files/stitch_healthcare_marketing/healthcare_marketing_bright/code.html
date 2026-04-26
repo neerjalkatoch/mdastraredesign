@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "background": "#fdf7ff",
+                        "inverse-on-surface": "#f5eeff",
+                        "outline": "#7b7485",
+                        "on-surface-variant": "#4a4454",
+                        "on-secondary-fixed": "#1b1a25",
+                        "surface-dim": "#dfd6ed",
+                        "primary": "#6b3dca",
+                        "inverse-surface": "#322e3f",
+                        "primary-container": "#8458e4",
+                        "on-surface": "#1d1929",
+                        "error": "#ba1a1a",
+                        "primary-fixed-dim": "#d1bcff",
+                        "surface-container-highest": "#e7dff6",
+                        "error-container": "#ffdad6",
+                        "tertiary": "#7b5500",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed-dim": "#fbbb45",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-container": "#fffbff",
+                        "surface": "#fdf7ff",
+                        "on-primary-fixed-variant": "#5520b3",
+                        "on-error": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#5f4100",
+                        "surface-variant": "#e7dff6",
+                        "surface-tint": "#6d40cc",
+                        "surface-container-high": "#ede4fb",
+                        "secondary-container": "#e4e0f0",
+                        "surface-container": "#f3eaff",
+                        "on-primary-fixed": "#23005b",
+                        "on-secondary": "#ffffff",
+                        "surface-container-low": "#f8f1ff",
+                        "inverse-primary": "#d1bcff",
+                        "tertiary-fixed": "#ffdeab",
+                        "secondary-fixed-dim": "#c8c4d4",
+                        "on-secondary-fixed-variant": "#474552",
+                        "surface-bright": "#fdf7ff",
+                        "primary-fixed": "#e9ddff",
+                        "tertiary-container": "#9a6c00",
+                        "on-background": "#1d1929",
+                        "on-secondary-container": "#656370",
+                        "on-primary": "#ffffff",
+                        "secondary-fixed": "#e4e0f0",
+                        "on-primary-container": "#fffbff",
+                        "on-tertiary-fixed": "#271900",
+                        "secondary": "#5f5d6a",
+                        "outline-variant": "#cbc3d6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-page": "64px",
+                        "section-gap": "128px",
+                        "unit": "8px",
+                        "container-max": "1200px",
+                        "gutter": "32px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Newsreader"],
+                        "label-caps": ["Inter"],
+                        "display-lg": ["Newsreader"],
+                        "button": ["Inter"],
+                        "body-lg": ["Newsreader"],
+                        "body-md": ["Newsreader"],
+                        "headline-sm": ["Newsreader"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["32px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                        "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.08em", "fontWeight": "600"}],
+                        "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "button": ["14px", {"lineHeight": "1", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                        "body-lg": ["20px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-sm": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}]
+                    }
+                }
+            }
+        }
+    </script>
+<link rel="stylesheet" href="../assets/css/site.css" />
+<script src="../assets/js/site.js" defer></script>
+</head>
+<body class="bg-background text-on-background font-body-md">
+<!-- Navigation Header -->
+<header class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-purple-50 shadow-sm transition-all duration-300">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-8 py-4 h-20">
+        <a href="../homepage_luminous/code.html" class="flex items-center">
+            <img src="../assets/WhatsApp_Image_2026-04-20_at_19.25.35-removebg-preview.png" alt="MD Astra Logo" class="h-14 w-auto object-contain mix-blend-multiply dark:mix-blend-normal">
+        </a>
+        <nav class="hidden md:flex gap-8 items-center">
+            <a class="text-slate-600 hover:text-purple-600 font-medium transition-colors duration-200" href="../homepage_luminous/code.html">Home</a>
+            <a class="text-slate-600 hover:text-purple-600 font-medium transition-colors duration-200" href="../book_an_appointment/code.html">About Us</a>
+            
+            <!-- Services Dropdown -->
+            <div class="relative group">
+                <button class="flex items-center gap-1 text-slate-600 hover:text-purple-600 font-medium transition-colors duration-200 py-2">
+                    Services <span class="material-symbols-outlined text-[20px]">expand_more</span>
+                </button>
+                <div class="absolute left-0 top-full mt-2 w-64 bg-white rounded-xl shadow-xl border border-purple-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-left -translate-y-2 group-hover:translate-y-0 overflow-hidden">
+                    <div class="py-2">
+                        <a href="../seo_services/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">SEO Service</a>
+                        <a href="../website_development/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Website Development</a>
+                        <a href="../social_media_marketing/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Social Media Marketing</a>
+                        <a href="../gmb_management/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">GMB Management</a>
+                        <a href="../content_marketing/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Content Marketing</a>
+                        <a href="../amazon_ghl_marketing/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Amazon & GHL Marketing</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Industries Dropdown -->
+            <div class="relative group">
+                <button class="flex items-center gap-1 text-slate-600 hover:text-purple-600 font-medium transition-colors duration-200 py-2">
+                    Industries <span class="material-symbols-outlined text-[20px]">expand_more</span>
+                </button>
+                <div class="absolute left-0 top-full mt-2 w-64 bg-white rounded-xl shadow-xl border border-purple-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-left -translate-y-2 group-hover:translate-y-0 overflow-hidden">
+                    <div class="py-2">
+                        <a href="../real_estate_marketing_bright/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Real Estate</a>
+                        <a href="../healthcare_marketing_bright/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Healthcare</a>
+                        <a href="../restaurant_marketing_bright/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Restaurants</a>
+                        <a href="../ecommerce_marketing_bright/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Ecommerce</a>
+                        <a href="../legal_marketing_bright/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Legal Services</a>
+                        <a href="../education_marketing_bright/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Education & Coaching</a>
+                        <a href="../local_services_marketing_bright/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Local Services</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <a href="../book_an_appointment/code.html" class="bg-purple-600 text-white px-6 py-2.5 rounded-full font-medium text-sm hover:bg-purple-700 transition-colors shadow-sm">Get Started</a>
+    </div>
+</header>
+<!-- Hero Section -->
+<section class="relative pt-40 pb-24 overflow-hidden">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="relative z-10">
+<span class="font-label-caps text-label-caps text-primary uppercase mb-6 block tracking-widest">Healthcare Exclusive Marketing</span>
+<h1 class="font-display-lg text-display-lg text-on-surface mb-8">Elevating Medical Practices with Precision Digital Marketing.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-xl">We blend clinical-grade data with editorial-level strategy to help healthcare providers reach the right patients at the right moment.</p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-[#9D72FF] text-white px-8 py-4 rounded-full font-button text-button hover:shadow-lg hover:shadow-primary/20 transition-all duration-300">Book Your Growth Audit</button>
+<button class="border border-primary text-primary px-8 py-4 rounded-full font-button text-button hover:bg-surface-container transition-all duration-300">View Methodology</button>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl border border-surface-variant">
+<img alt="Healthcare Professional" class="w-full h-full object-cover" data-alt="Modern clean hospital corridor with a professional female doctor walking confidently with a digital tablet in soft bright natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMHZjOon3JS-aXiZphsDxv6Muh2KahC5hpWZuyf89Xakll7zAVg1-y2LLcccNbW2PDRbAc8J7c_gZL2zgdKUVb29UrFLc5sVSrDbYbi6EUwDpYkn0WI8tsixs-CCNdC2HDIp3J4jIak-q7i-LC_lfrZF1G1E-RnUM78-EgmWVZ42AKUwPfMUka4-k_NdGEUuLZC8bTEvuTXQpLiQgjanTxw6Ku0SmCFMcM-h0HkrThaWcdIrdU4Q6LA25u3ZZpBYBZVrn8r65svFs"/>
+</div>
+<div class="absolute -bottom-8 -left-8 bg-white p-8 rounded-2xl shadow-xl border border-surface-variant max-w-xs">
+<div class="flex items-center gap-4 mb-2">
+<span class="material-symbols-outlined text-primary" data-icon="trending_up">trending_up</span>
+<span class="font-label-caps text-label-caps text-primary">Live Success Metric</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-on-surface">+142%</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Avg. Increase in Qualified Patient Inquiries</p>
+</div>
+</div>
+</div>
+<!-- Decorative subtle background shape -->
+<div class="absolute top-0 right-0 -z-10 w-1/2 h-full bg-surface-container-low rounded-l-[200px] opacity-50"></div>
+</section>
+<!-- Healthcare Marketing Services (Bento Grid) -->
+<section class="py-section-gap bg-white">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-24">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-4">Patient-Centric Solutions</h2>
+<div class="w-24 h-1 bg-primary mx-auto mb-8"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Large Card 1 -->
+<div class="md:col-span-8 bg-surface-container-low p-12 rounded-3xl border border-surface-variant flex flex-col justify-between hover:border-primary/30 transition-all duration-300">
+<div>
+<div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-8 shadow-sm">
+<span class="material-symbols-outlined text-primary" data-icon="person_add">person_add</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-4">Patient Acquisition Systems</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 max-w-lg">Advanced lead management and conversion funnels designed specifically for the unique journey of a healthcare seeker.</p>
+</div>
+<div class="flex gap-4 flex-wrap">
+<span class="bg-white px-4 py-2 rounded-full text-xs font-label-caps text-primary border border-surface-variant">CRM Integration</span>
+<span class="bg-white px-4 py-2 rounded-full text-xs font-label-caps text-primary border border-surface-variant">Lead Scoring</span>
+<span class="bg-white px-4 py-2 rounded-full text-xs font-label-caps text-primary border border-surface-variant">Appointment Scheduling</span>
+</div>
+</div>
+<!-- Small Card 1 -->
+<div class="md:col-span-4 bg-white p-10 rounded-3xl border border-surface-variant hover:border-primary/30 transition-all duration-300 shadow-sm">
+<div class="w-12 h-12 bg-surface-container-low rounded-xl flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-primary" data-icon="location_on">location_on</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-4">Local SEO</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Dominating the map pack for high-intent medical searches in your specific service area.</p>
+</div>
+<!-- Small Card 2 -->
+<div class="md:col-span-4 bg-white p-10 rounded-3xl border border-surface-variant hover:border-primary/30 transition-all duration-300 shadow-sm">
+<div class="w-12 h-12 bg-surface-container-low rounded-xl flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-primary" data-icon="share">share</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-4">Social Media</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Building trust and community through authority-driven healthcare content and active engagement.</p>
+</div>
+<!-- Large Card 2 -->
+<div class="md:col-span-8 bg-[#F3EFFF] p-12 rounded-3xl border border-[#D1BCFF]/30 flex flex-col md:flex-row gap-12 hover:border-primary/30 transition-all duration-300">
+<div class="md:w-1/2">
+<div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-8 shadow-sm">
+<span class="material-symbols-outlined text-primary" data-icon="ads_click">ads_click</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-4">Paid Media Strategy</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">HIPAA-compliant Google Ads and Meta campaigns that deliver consistent return on ad spend.</p>
+</div>
+<div class="md:w-1/2 flex items-center justify-center">
+<img alt="Analytics Chart" class="rounded-xl shadow-lg border border-white" data-alt="Clean minimalist dashboard showing upward growth trends on a tablet screen with soft purple highlights and reflections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJ_7a2JW_4_yQ25WB19nszjZF4lTVOAvizaY0KdFP1JYOz4lmTwjWx4oR4voMIXorqNAhG4cchbxViK6XhCWjn8gSK-YKa8JYQezdi8DhWBpVGPnx3cIXNLXTC2zI566eVu4EmQALCMhyDSwIyPLu4DliUDoZE6_3y8LLdV30X72tv4kdq_VNWxYDT4Rn787xoJ0_E7qMGtf9cODFKNuSRNsv6-rkrgL2xypyVdoozyFfVHUI7LII6ZPjTPDq7mng8-jdtKkFhHE8"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Editorial Quote -->
+<section class="py-24 bg-background">
+<div class="max-w-4xl mx-auto px-8">
+<div class="pl-12 border-l-4 border-primary italic">
+<blockquote class="font-headline-md text-headline-md text-on-surface leading-relaxed">
+                    "Marketing in healthcare isn't just about clicks; it's about building a digital bridge of trust between a provider and a patient in need. We treat every campaign with the same precision as a surgical procedure."
+                </blockquote>
+<cite class="block mt-8 font-label-caps text-label-caps text-primary uppercase tracking-widest not-italic">Marcus Astra — Founder &amp; Strategy Lead</cite>
+</div>
+</div>
+</section>
+<!-- Growth Framework (Step-by-Step) -->
+<section class="py-section-gap bg-white relative overflow-hidden">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
+<div class="max-w-2xl">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-6">The 6-Step Precision Framework</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Our systematic approach to scaling healthcare practices, from initial visibility to long-term patient loyalty.</p>
+</div>
+<button class="bg-[#9D72FF] text-white px-10 py-5 rounded-full font-button text-button hover:bg-primary-container transition-all duration-300">Download Framework PDF</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16">
+<!-- Step 1 -->
+<div class="group">
+<div class="font-['Newsreader'] text-6xl text-[#9D72FF]/20 font-bold mb-4 group-hover:text-[#9D72FF]/40 transition-colors">01</div>
+<h4 class="font-headline-sm text-headline-sm mb-4">Practice Audit</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">In-depth analysis of your current digital footprint, competitor landscape, and patient touchpoints.</p>
+</div>
+<!-- Step 2 -->
+<div class="group">
+<div class="font-['Newsreader'] text-6xl text-[#9D72FF]/20 font-bold mb-4 group-hover:text-[#9D72FF]/40 transition-colors">02</div>
+<h4 class="font-headline-sm text-headline-sm mb-4">Patient Personas</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Developing detailed psychological and behavioral profiles of your ideal medical patient base.</p>
+</div>
+<!-- Step 3 -->
+<div class="group">
+<div class="font-['Newsreader'] text-6xl text-[#9D72FF]/20 font-bold mb-4 group-hover:text-[#9D72FF]/40 transition-colors">03</div>
+<h4 class="font-headline-sm text-headline-sm mb-4">Infrastructure Setup</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Ensuring HIPAA compliance and setting up advanced tracking systems across all digital assets.</p>
+</div>
+<!-- Step 4 -->
+<div class="group">
+<div class="font-['Newsreader'] text-6xl text-[#9D72FF]/20 font-bold mb-4 group-hover:text-[#9D72FF]/40 transition-colors">04</div>
+<h4 class="font-headline-sm text-headline-sm mb-4">Multi-Channel Launch</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Coordinated execution of SEO, PPC, and social campaigns to maximize practice exposure.</p>
+</div>
+<!-- Step 5 -->
+<div class="group">
+<div class="font-['Newsreader'] text-6xl text-[#9D72FF]/20 font-bold mb-4 group-hover:text-[#9D72FF]/40 transition-colors">05</div>
+<h4 class="font-headline-sm text-headline-sm mb-4">Optimization Loop</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Iterative testing and refinement based on real-world patient acquisition data and ROI.</p>
+</div>
+<!-- Step 6 -->
+<div class="group">
+<div class="font-['Newsreader'] text-6xl text-[#9D72FF]/20 font-bold mb-4 group-hover:text-[#9D72FF]/40 transition-colors">06</div>
+<h4 class="font-headline-sm text-headline-sm mb-4">Retention Strategy</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Implementing email nurture and referral programs to turn one-time patients into lifelong advocates.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose MD Astra (Cards) -->
+<section class="py-section-gap bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<h2 class="font-headline-md text-headline-md text-on-surface text-center mb-24">The MD Astra Advantage</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="bg-white p-12 rounded-3xl border border-surface-variant text-center flex flex-col items-center">
+<div class="w-16 h-16 bg-[#F3EFFF] rounded-full flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="verified_user">verified_user</span>
+</div>
+<h5 class="font-headline-sm text-headline-sm mb-4">HIPAA Native</h5>
+<p class="font-body-md text-body-md text-on-surface-variant">Security isn't an afterthought. Every strategy we deploy is built within the strict confines of medical privacy regulations.</p>
+</div>
+<div class="bg-white p-12 rounded-3xl border border-surface-variant text-center flex flex-col items-center">
+<div class="w-16 h-16 bg-[#F3EFFF] rounded-full flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="clinical_notes">clinical_notes</span>
+</div>
+<h5 class="font-headline-sm text-headline-sm mb-4">Clinical Expertise</h5>
+<p class="font-body-md text-body-md text-on-surface-variant">Our content team includes medical writers who understand complex pathologies and procedures, ensuring authority.</p>
+</div>
+<div class="bg-white p-12 rounded-3xl border border-surface-variant text-center flex flex-col items-center">
+<div class="w-16 h-16 bg-[#F3EFFF] rounded-full flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="monitoring">monitoring</span>
+</div>
+<h5 class="font-headline-sm text-headline-sm mb-4">Pure Performance</h5>
+<p class="font-body-md text-body-md text-on-surface-variant">No vanity metrics. We focus on cost-per-patient-acquisition and net practice revenue growth.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-section-gap bg-white">
+<div class="max-w-5xl mx-auto px-8">
+<div class="bg-primary p-16 rounded-[40px] text-center text-white relative overflow-hidden">
+<div class="relative z-10">
+<h2 class="font-display-lg text-display-lg mb-8">Ready to Scale Your Practice?</h2>
+<p class="font-body-lg text-body-lg text-white/80 mb-12 max-w-2xl mx-auto">Schedule a 30-minute growth consultation with our healthcare strategy team today.</p>
+<button class="bg-white text-primary px-12 py-6 rounded-full font-button text-button hover:bg-surface-container-high transition-all duration-300">Request Your Consultation</button>
+</div>
+<!-- Abstract decorative element -->
+<div class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-white/10 to-transparent opacity-50"></div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full py-16 px-8 border-t border-[#F3EFFF] dark:border-slate-800 bg-white dark:bg-slate-950">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex flex-col gap-2">
+<img src="../assets/WhatsApp_Image_2026-04-20_at_19.25.35-removebg-preview.png" alt="MD Astra Logo" class="h-24 w-auto object-contain mb-4 mix-blend-multiply dark:mix-blend-normal">
+<p class="font-['Newsreader'] italic text-slate-500">© 2024 MD Astra. Precision Marketing for Modern Enterprises.</p>
+</div>
+<div class="flex gap-8">
+<a class="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition-opacity duration-200 hover:underline decoration-[#9D72FF] underline-offset-4" href="../book_an_appointment/code.html">About</a>
+<a class="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition-opacity duration-200 hover:underline decoration-[#9D72FF] underline-offset-4" href="../book_an_appointment/code.html">Careers</a>
+<a class="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition-opacity duration-200 hover:underline decoration-[#9D72FF] underline-offset-4" href="../book_an_appointment/code.html">Privacy</a>
+<a class="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition-opacity duration-200 hover:underline decoration-[#9D72FF] underline-offset-4" href="../book_an_appointment/code.html">Terms</a>
+<a class="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition-opacity duration-200 hover:underline decoration-[#9D72FF] underline-offset-4" href="../book_an_appointment/code.html">Contact</a>
+</div>
+</div>
+</footer>
+</body></html>

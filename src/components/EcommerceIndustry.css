@@ -1,0 +1,558 @@
+/* Ecommerce Industry Page */
+
+/* Hero Section */
+.ecommerce-hero {
+  padding: var(--section-padding) 0;
+}
+
+.ecommerce-hero-content {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.ecommerce-hero-content .overline {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.ecommerce-hero-content h1 {
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.ecommerce-hero-subtitle {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+/* Introduction Section */
+.ecommerce-intro {
+  background: var(--color-bg);
+}
+
+.ecommerce-intro-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ecommerce-intro-content h2 {
+  margin-bottom: 1.5rem;
+}
+
+.ecommerce-intro-content p {
+  font-size: 1.0625rem;
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+}
+
+.ecommerce-tagline {
+  font-size: 1.125rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+/* Services Section */
+.ecommerce-services {
+  background: var(--color-bg-subtle);
+}
+
+.ecommerce-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.ecommerce-service-card {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 2rem 1.75rem;
+  transition: all var(--transition-base);
+}
+
+.ecommerce-service-card:hover {
+  border-color: var(--color-border-dark);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.ecommerce-service-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-primary-bg);
+  border-radius: var(--radius-md);
+  color: var(--color-primary);
+  margin-bottom: 1.25rem;
+  transition: all var(--transition-base);
+}
+
+.ecommerce-service-card:hover .ecommerce-service-icon {
+  background: var(--color-primary);
+  color: #ffffff;
+}
+
+.ecommerce-service-title {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.ecommerce-service-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.ecommerce-service-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.625rem;
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.ecommerce-service-list li svg {
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+  color: var(--color-primary);
+}
+
+/* Framework Section */
+.ecommerce-framework {
+  background: var(--color-bg);
+}
+
+.ecommerce-framework-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.ecommerce-framework-card {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 2rem 1.75rem;
+  transition: all var(--transition-base);
+  position: relative;
+}
+
+.ecommerce-framework-card:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-md);
+}
+
+.ecommerce-framework-step {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-border);
+  line-height: 1;
+}
+
+.ecommerce-framework-card:hover .ecommerce-framework-step {
+  color: var(--color-primary);
+}
+
+.ecommerce-framework-title {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+  padding-right: 3rem;
+}
+
+.ecommerce-framework-description {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+}
+
+/* How MD Astra Helps Section */
+.ecommerce-helps {
+  background: var(--color-bg-subtle);
+}
+
+.ecommerce-helps-content {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.ecommerce-helps-section {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+}
+
+.ecommerce-helps-heading {
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 1.5rem;
+}
+
+.ecommerce-helps-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.ecommerce-helps-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.9375rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.ecommerce-helps-list-positive li svg {
+  flex-shrink: 0;
+  margin-top: 0.125rem;
+  color: var(--color-success);
+}
+
+.ecommerce-helps-list-problems li svg {
+  flex-shrink: 0;
+  margin-top: 0.125rem;
+  color: var(--color-text-muted);
+}
+
+.ecommerce-helps-tagline {
+  font-size: 1.0625rem;
+  color: var(--color-text);
+  font-weight: 600;
+  margin: 1.5rem 0 1rem;
+}
+
+.ecommerce-helps-conclusion {
+  font-size: 1.0625rem;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+}
+
+/* Why Choose Section */
+.ecommerce-why {
+  background: var(--color-bg);
+}
+
+.ecommerce-why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.ecommerce-why-card {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 2rem 1.75rem;
+  transition: all var(--transition-base);
+  text-align: center;
+}
+
+.ecommerce-why-card:hover {
+  border-color: var(--color-border-dark);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.ecommerce-why-icon {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-primary-bg);
+  border-radius: var(--radius-md);
+  color: var(--color-primary);
+  margin: 0 auto 1.25rem;
+  transition: all var(--transition-base);
+}
+
+.ecommerce-why-card:hover .ecommerce-why-icon {
+  background: var(--color-primary);
+  color: #ffffff;
+}
+
+.ecommerce-why-title {
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 0.625rem;
+  line-height: 1.3;
+}
+
+.ecommerce-why-description {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+/* FAQ Section */
+.ecommerce-faq {
+  background: var(--color-bg-subtle);
+}
+
+.ecommerce-faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.ecommerce-faq-item {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: all var(--transition-base);
+}
+
+.ecommerce-faq-item:hover {
+  border-color: var(--color-border-dark);
+}
+
+.ecommerce-faq-item.open {
+  border-color: var(--color-primary);
+}
+
+.ecommerce-faq-trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  padding: 1.25rem;
+  text-align: left;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.ecommerce-faq-trigger:hover {
+  background: var(--color-bg-subtle);
+}
+
+.ecommerce-faq-icon {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-primary-bg);
+  border-radius: var(--radius-sm);
+  color: var(--color-primary);
+  transition: all var(--transition-base);
+}
+
+.ecommerce-faq-item.open .ecommerce-faq-icon {
+  background: var(--color-primary);
+  color: #ffffff;
+}
+
+.ecommerce-faq-question {
+  flex: 1;
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--color-text);
+  line-height: 1.4;
+}
+
+.ecommerce-faq-chevron {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-muted);
+  transition: all var(--transition-base);
+}
+
+.ecommerce-faq-item.open .ecommerce-faq-chevron {
+  transform: rotate(180deg);
+  color: var(--color-primary);
+}
+
+.ecommerce-faq-content {
+  overflow: hidden;
+}
+
+.ecommerce-faq-content p {
+  padding: 0 1.25rem 1.25rem calc(1.25rem + 36px + 0.875rem);
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+}
+
+/* CTA Section */
+.ecommerce-cta {
+  background: linear-gradient(135deg, #6b21a8 0%, #7c3aed 100%);
+  color: #ffffff;
+}
+
+.ecommerce-cta-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.ecommerce-cta-content h2 {
+  color: #ffffff;
+  margin-bottom: 1.25rem;
+}
+
+.ecommerce-cta-content .text-gradient {
+  color: #d946ef;
+}
+
+.ecommerce-cta-content p {
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.ecommerce-cta-content .btn {
+  background: #ffffff;
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.ecommerce-cta-content .btn:hover {
+  background: rgba(255, 255, 255, 0.95);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.btn-lg {
+  padding: 1.125rem 2rem;
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .ecommerce-services-grid,
+  .ecommerce-framework-grid,
+  .ecommerce-why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .ecommerce-hero-subtitle {
+    font-size: 1.0625rem;
+  }
+
+  .ecommerce-services-grid,
+  .ecommerce-framework-grid,
+  .ecommerce-why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ecommerce-service-card,
+  .ecommerce-framework-card,
+  .ecommerce-why-card {
+    padding: 1.5rem;
+  }
+
+  .ecommerce-helps-section {
+    padding: 1.75rem;
+  }
+
+  .ecommerce-faq-trigger {
+    padding: 1rem;
+    gap: 0.75rem;
+  }
+
+  .ecommerce-faq-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .ecommerce-faq-question {
+    font-size: 0.875rem;
+  }
+
+  .ecommerce-faq-content p {
+    padding: 0 1rem 1rem calc(1rem + 32px + 0.75rem);
+    font-size: 0.8125rem;
+  }
+
+  .ecommerce-cta-content p {
+    font-size: 1rem;
+  }
+
+  .btn-lg {
+    padding: 1rem 1.75rem;
+    font-size: 0.9375rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .ecommerce-framework-step {
+    font-size: 1.75rem;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .ecommerce-framework-title {
+    padding-right: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .ecommerce-faq-trigger {
+    flex-wrap: wrap;
+  }
+
+  .ecommerce-faq-icon {
+    order: 1;
+  }
+
+  .ecommerce-faq-question {
+    order: 2;
+    flex: 1 1 calc(100% - 40px - 32px - 1.5rem);
+  }
+
+  .ecommerce-faq-chevron {
+    order: 3;
+  }
+
+  .ecommerce-faq-content p {
+    padding: 0 1rem 1rem;
+  }
+}

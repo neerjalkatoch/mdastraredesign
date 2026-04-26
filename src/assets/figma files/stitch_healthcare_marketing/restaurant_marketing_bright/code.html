@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500;1,6..72,600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "background": "#fdf7ff",
+                    "inverse-on-surface": "#f5eeff",
+                    "outline": "#7b7485",
+                    "on-surface-variant": "#4a4454",
+                    "on-secondary-fixed": "#1b1a25",
+                    "surface-dim": "#dfd6ed",
+                    "primary": "#6b3dca",
+                    "inverse-surface": "#322e3f",
+                    "primary-container": "#8458e4",
+                    "on-surface": "#1d1929",
+                    "error": "#ba1a1a",
+                    "primary-fixed-dim": "#d1bcff",
+                    "surface-container-highest": "#e7dff6",
+                    "error-container": "#ffdad6",
+                    "tertiary": "#7b5500",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-fixed-dim": "#fbbb45",
+                    "on-error-container": "#93000a",
+                    "on-tertiary-container": "#fffbff",
+                    "surface": "#fdf7ff",
+                    "on-primary-fixed-variant": "#5520b3",
+                    "on-error": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#5f4100",
+                    "surface-variant": "#e7dff6",
+                    "surface-tint": "#6d40cc",
+                    "surface-container-high": "#ede4fb",
+                    "secondary-container": "#e4e0f0",
+                    "surface-container": "#f3eaff",
+                    "on-primary-fixed": "#23005b",
+                    "on-secondary": "#ffffff",
+                    "surface-container-low": "#f8f1ff",
+                    "inverse-primary": "#d1bcff",
+                    "tertiary-fixed": "#ffdeab",
+                    "secondary-fixed-dim": "#c8c4d4",
+                    "on-secondary-fixed-variant": "#474552",
+                    "surface-bright": "#fdf7ff",
+                    "primary-fixed": "#e9ddff",
+                    "tertiary-container": "#9a6c00",
+                    "on-background": "#1d1929",
+                    "on-secondary-container": "#656370",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed": "#e4e0f0",
+                    "on-primary-container": "#fffbff",
+                    "on-tertiary-fixed": "#271900",
+                    "secondary": "#5f5d6a",
+                    "outline-variant": "#cbc3d6"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-page": "64px",
+                    "section-gap": "128px",
+                    "unit": "8px",
+                    "container-max": "1200px",
+                    "gutter": "32px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Newsreader"],
+                    "label-caps": ["Inter"],
+                    "display-lg": ["Newsreader"],
+                    "button": ["Inter"],
+                    "body-lg": ["Newsreader"],
+                    "body-md": ["Newsreader"],
+                    "headline-sm": ["Newsreader"]
+            },
+            "fontSize": {
+                    "headline-md": ["32px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                    "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.08em", "fontWeight": "600"}],
+                    "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "button": ["14px", {"lineHeight": "1", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                    "body-lg": ["20px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-sm": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { background-color: #fdf7ff; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .ambient-glow { box-shadow: 0 10px 40px -15px rgba(157, 114, 255, 0.15); }
+    </style>
+<link rel="stylesheet" href="../assets/css/site.css" />
+<script src="../assets/js/site.js" defer></script>
+</head>
+<body class="font-body-md text-on-background selection:bg-primary-fixed">
+<!-- Navigation Header -->
+<header class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-purple-50 shadow-sm transition-all duration-300">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-8 py-4 h-20">
+        <a href="../homepage_luminous/code.html" class="flex items-center">
+            <img src="../assets/WhatsApp_Image_2026-04-20_at_19.25.35-removebg-preview.png" alt="MD Astra Logo" class="h-14 w-auto object-contain mix-blend-multiply dark:mix-blend-normal">
+        </a>
+        <nav class="hidden md:flex gap-8 items-center">
+            <a class="text-slate-600 hover:text-purple-600 font-medium transition-colors duration-200" href="../homepage_luminous/code.html">Home</a>
+            <a class="text-slate-600 hover:text-purple-600 font-medium transition-colors duration-200" href="../book_an_appointment/code.html">About Us</a>
+            
+            <!-- Services Dropdown -->
+            <div class="relative group">
+                <button class="flex items-center gap-1 text-slate-600 hover:text-purple-600 font-medium transition-colors duration-200 py-2">
+                    Services <span class="material-symbols-outlined text-[20px]">expand_more</span>
+                </button>
+                <div class="absolute left-0 top-full mt-2 w-64 bg-white rounded-xl shadow-xl border border-purple-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-left -translate-y-2 group-hover:translate-y-0 overflow-hidden">
+                    <div class="py-2">
+                        <a href="../seo_services/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">SEO Service</a>
+                        <a href="../website_development/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Website Development</a>
+                        <a href="../social_media_marketing/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Social Media Marketing</a>
+                        <a href="../gmb_management/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">GMB Management</a>
+                        <a href="../content_marketing/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Content Marketing</a>
+                        <a href="../amazon_ghl_marketing/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Amazon & GHL Marketing</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Industries Dropdown -->
+            <div class="relative group">
+                <button class="flex items-center gap-1 text-slate-600 hover:text-purple-600 font-medium transition-colors duration-200 py-2">
+                    Industries <span class="material-symbols-outlined text-[20px]">expand_more</span>
+                </button>
+                <div class="absolute left-0 top-full mt-2 w-64 bg-white rounded-xl shadow-xl border border-purple-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-left -translate-y-2 group-hover:translate-y-0 overflow-hidden">
+                    <div class="py-2">
+                        <a href="../real_estate_marketing_bright/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Real Estate</a>
+                        <a href="../healthcare_marketing_bright/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Healthcare</a>
+                        <a href="../restaurant_marketing_bright/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Restaurants</a>
+                        <a href="../ecommerce_marketing_bright/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Ecommerce</a>
+                        <a href="../legal_marketing_bright/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Legal Services</a>
+                        <a href="../education_marketing_bright/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Education & Coaching</a>
+                        <a href="../local_services_marketing_bright/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Local Services</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <a href="../book_an_appointment/code.html" class="bg-purple-600 text-white px-6 py-2.5 rounded-full font-medium text-sm hover:bg-purple-700 transition-colors shadow-sm">Get Started</a>
+    </div>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative overflow-hidden pt-24 pb-32">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="z-10">
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-widest mb-6 block">Culinary Excellence &amp; Precision</span>
+<h1 class="font-display-lg text-display-lg text-on-surface mb-8 leading-[1.05]">
+                        Transforming <span class="italic text-primary">Dining Concepts</span> into Local Destinations.
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-xl">
+                        MD Astra delivers sophisticated performance marketing for modern restaurants. We blend data-driven visibility with the art of culinary storytelling to fill your tables every night.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-full font-button text-button hover:opacity-90 transition-all ambient-glow">
+                            Scale Your Restaurant
+                        </button>
+<button class="border border-primary text-primary px-8 py-4 rounded-full font-button text-button hover:bg-primary-container/10 transition-all">
+                            View Case Studies
+                        </button>
+</div>
+</div>
+<div class="relative group">
+<div class="absolute -inset-4 bg-primary/5 rounded-full blur-3xl group-hover:bg-primary/10 transition-all duration-700"></div>
+<div class="relative aspect-square rounded-full overflow-hidden border-[12px] border-white shadow-2xl">
+<img alt="Luxury dining interior" class="w-full h-full object-cover scale-110 group-hover:scale-100 transition-transform duration-1000" data-alt="Modern high-end restaurant interior with warm ambient lighting, elegant table settings, and soft purple accents in the decor style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7vnHCcwWXO8b_TcSGpFTApHK-Lpyglv8aYEwadDp626aSURYe8qYGiqS7BF-W1RI4TgXrIvvrXEcWdytVawWShvx99UC4DKMCfc0hGMZIvW1tqHoSMOXoGyC4B-_SmL217mQpyrTL5Vka_ajtHfLPghQ5x3BeV4A_NPA2Mzqv7zbOzvrOSWJ9F_0k00sByeGI2550uI9xZ1L8BkPkH7McEIDap5hj5Tqsgkk9I9XdK9WAgDahb2W6RugCBbIXC-ejfJ6gnXW4pI0"/>
+</div>
+<!-- Decorative Floating Element -->
+<div class="absolute -bottom-8 -left-8 bg-white p-6 rounded-2xl shadow-xl border border-surface-container-high max-w-[200px]">
+<p class="font-headline-sm text-headline-sm text-primary mb-1">142%</p>
+<p class="font-label-caps text-[10px] text-on-surface-variant leading-tight">Average Increase in Direct Bookings for Partners</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Bento Grid -->
+<section class="bg-surface-container-low py-24">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-20">
+<h2 class="font-headline-md text-display-lg mb-4">Precision Services</h2>
+<p class="font-body-lg text-on-surface-variant max-w-2xl mx-auto">Engineered to capture intent and build loyalty across every digital touchpoint.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Service 1: Local SEO -->
+<div class="md:col-span-2 bg-white p-10 rounded-2xl border border-surface-container-high ambient-glow flex flex-col md:flex-row gap-8 items-center">
+<div class="flex-1">
+<span class="material-symbols-outlined text-4xl text-primary mb-6" data-icon="location_on">location_on</span>
+<h3 class="font-headline-sm text-headline-sm mb-4">Hyper-Local Visibility</h3>
+<p class="text-on-surface-variant mb-6">Dominating "near me" searches through optimized Google Business Profiles and local citation clusters. We ensure your restaurant is the first choice for hungry locals.</p>
+<ul class="space-y-2">
+<li class="flex items-center gap-2 text-sm text-on-surface-variant italic font-body-md">
+<span class="w-1.5 h-1.5 bg-primary rounded-full"></span> Reputation Management &amp; Review Growth
+                                </li>
+<li class="flex items-center gap-2 text-sm text-on-surface-variant italic font-body-md">
+<span class="w-1.5 h-1.5 bg-primary rounded-full"></span> Local Schema &amp; Keyword Optimization
+                                </li>
+</ul>
+</div>
+<div class="w-full md:w-64 h-48 rounded-xl overflow-hidden shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Detailed close-up of a smartphone displaying a highly rated local restaurant on a map interface with vibrant photos" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAv__yIWDSyyRbxN84pwskMaMRMQZvFqoSl_1TqDD32tlAsvOeSCXSiu6wnZR7j4IXvurNoTvfFHT1rWhJoBK8_F9eXine3a7byb9_nV-is4dAMBxZu0siKOklgdEMrqodHwrQUJAJBxA1WbQERGDwTzI8qbttDqxqyhLUka4xLlCA0hztptGD3BIeC_tcRuWBT5SLs_EHKaXF1HNDTo0a8_cCuPEDgg2JFutBaE4bwipY2N2PuoaCyIuVpsI6I_b_GCA1RRndtb2A"/>
+</div>
+</div>
+<!-- Service 2: Paid Ads -->
+<div class="bg-white p-10 rounded-2xl border border-surface-container-high ambient-glow flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-4xl text-primary mb-6" data-icon="ads_click">ads_click</span>
+<h3 class="font-headline-sm text-headline-sm mb-4">Paid Performance</h3>
+<p class="text-on-surface-variant">Precision Meta and Google Ads campaigns that target diners based on behavior, location, and culinary preference.</p>
+</div>
+<div class="mt-8 pt-6 border-t border-surface-container">
+<a class="text-primary font-button flex items-center gap-2 hover:translate-x-1 transition-transform" href="../book_an_appointment/code.html">
+                                Explore Ad Strategy <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Service 3: Social Media -->
+<div class="bg-white p-10 rounded-2xl border border-surface-container-high ambient-glow">
+<span class="material-symbols-outlined text-4xl text-primary mb-6" data-icon="photo_camera">photo_camera</span>
+<h3 class="font-headline-sm text-headline-sm mb-4">Visual Storytelling</h3>
+<p class="text-on-surface-variant mb-6">Social media isn't just about posting; it's about creating a digital sensory experience that drives reservations.</p>
+<div class="grid grid-cols-2 gap-2">
+<div class="aspect-square bg-surface-container-high rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity" data-alt="Stylized flat lay of gourmet food with artistic plating on a rustic table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNYVVjwXHo5FvzlCrT10OBmyJZKzM5ViTBrjfsTvcJ0VQjuhTvvrSAEtTeGp8okqdnpbtIJOnGQxahorAOL5NVVt2d8oAQpcftDt7Col7P8GwlIU_Swa_YvcAjymZq806X6fFnP67Y6owAcAXKs6rN1GcXRRfDPp9afpHQAnEcYL86AqOpI1BNs-ACC0E44KT8JlhX_CrQY6BzMBmVv40Rigp-6vk37-W5iw3hI44hWphP_nzlMRLLVvKW6zDonWbBhiOLqk0eeDI"/>
+</div>
+<div class="aspect-square bg-surface-container-high rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity" data-alt="Artisanal cocktail being poured with dramatic ice splash and soft background bokeh" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkWS56-R-0aTKPyswpcUMPiMpo8CM0lnMiRJqxezu_0SnmqUOD_NaDDgAeVjNUH3lrdZuKYmS3vz8yeOQ2IiFBv2Y6YOFdrgf3AU3WuwdZI7DazkeUFu1YlSYKG_7ERRTBmT8SbjiYEWooe5PHHGh4dl9_nwtYISPfWMnLHdhpGNbLgRmKp94Bf5IpRhb0-ewwQ8tobjGCSF3TEZlpn71v_br0XhPa6oAM9mDNdilvYSNKOcNQrKw0gw8ZFNne4LZewXvXqQteAY8"/>
+</div>
+</div>
+</div>
+<!-- Service 4: CRO -->
+<div class="md:col-span-2 bg-[#F3EFFF] p-10 rounded-2xl border border-primary/10 flex flex-col md:flex-row gap-12 items-center">
+<div class="flex-1">
+<h3 class="font-headline-sm text-headline-sm mb-4">Conversion Engineering</h3>
+<p class="text-on-surface-variant mb-6">We turn website visitors into confirmed diners. From friction-less booking integrations to mobile-first menu experiences, we optimize every pixel for the reservation.</p>
+<div class="flex gap-4">
+<div class="bg-white px-4 py-3 rounded-xl shadow-sm border border-primary/5">
+<p class="font-label-caps text-[10px] text-primary mb-1">Mobile Speed</p>
+<p class="font-headline-sm text-lg">98/100</p>
+</div>
+<div class="bg-white px-4 py-3 rounded-xl shadow-sm border border-primary/5">
+<p class="font-label-caps text-[10px] text-primary mb-1">Conv. Rate</p>
+<p class="font-headline-sm text-lg">+24%</p>
+</div>
+</div>
+</div>
+<div class="md:w-1/3 italic font-body-lg text-primary text-xl leading-relaxed border-l-4 border-primary pl-8">
+                            "The digital storefront is now as important as the physical entrance."
+                        </div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6-Step Growth Framework -->
+<section class="py-32 bg-white">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end gap-8 mb-20">
+<div class="max-w-2xl">
+<span class="font-label-caps text-primary tracking-widest block mb-4">Our Methodology</span>
+<h2 class="font-display-lg text-display-lg">The Astra Growth <span class="italic">Protocol</span></h2>
+</div>
+<p class="font-body-lg text-on-surface-variant max-w-sm mb-4">A systematic approach to scaling revenue and guest retention.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16">
+<!-- Step 1 -->
+<div class="group">
+<div class="font-headline-sm text-primary/20 text-6xl mb-4 italic transition-all group-hover:text-primary/40">01</div>
+<h4 class="font-headline-sm text-headline-sm mb-3">Market Audit</h4>
+<p class="text-on-surface-variant leading-relaxed">Deep analysis of local competition, guest sentiment, and existing digital footprint.</p>
+</div>
+<!-- Step 2 -->
+<div class="group">
+<div class="font-headline-sm text-primary/20 text-6xl mb-4 italic transition-all group-hover:text-primary/40">02</div>
+<h4 class="font-headline-sm text-headline-sm mb-3">Brand Polish</h4>
+<p class="text-on-surface-variant leading-relaxed">Elevating visual assets and messaging to align with a premium culinary experience.</p>
+</div>
+<!-- Step 3 -->
+<div class="group">
+<div class="font-headline-sm text-primary/20 text-6xl mb-4 italic transition-all group-hover:text-primary/40">03</div>
+<h4 class="font-headline-sm text-headline-sm mb-3">Foundation Build</h4>
+<p class="text-on-surface-variant leading-relaxed">Optimizing technical SEO and local listings to establish search dominance.</p>
+</div>
+<!-- Step 4 -->
+<div class="group">
+<div class="font-headline-sm text-primary/20 text-6xl mb-4 italic transition-all group-hover:text-primary/40">04</div>
+<h4 class="font-headline-sm text-headline-sm mb-3">Traffic Influx</h4>
+<p class="text-on-surface-variant leading-relaxed">Deploying aggressive, high-intent paid media campaigns across Meta and Google.</p>
+</div>
+<!-- Step 5 -->
+<div class="group">
+<div class="font-headline-sm text-primary/20 text-6xl mb-4 italic transition-all group-hover:text-primary/40">05</div>
+<h4 class="font-headline-sm text-headline-sm mb-3">Conversion Engine</h4>
+<p class="text-on-surface-variant leading-relaxed">Refining the reservation funnel to maximize direct bookings and minimize churn.</p>
+</div>
+<!-- Step 6 -->
+<div class="group">
+<div class="font-headline-sm text-primary/20 text-6xl mb-4 italic transition-all group-hover:text-primary/40">06</div>
+<h4 class="font-headline-sm text-headline-sm mb-3">Retention Loop</h4>
+<p class="text-on-surface-variant leading-relaxed">Implementing email and SMS systems to turn first-time guests into loyal regulars.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="py-32 bg-surface-container-low border-y border-surface-container">
+<div class="max-w-4xl mx-auto px-8">
+<div class="text-center mb-16">
+<h2 class="font-headline-md text-display-lg mb-4">Strategic Inquiries</h2>
+<p class="font-body-lg text-on-surface-variant">Addressing the unique challenges of modern restaurant growth.</p>
+</div>
+<div class="space-y-6">
+<div class="bg-white p-8 rounded-xl border border-surface-container shadow-sm">
+<h4 class="font-headline-sm text-xl mb-3 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="help_outline">help_outline</span>
+                            How do you track ROI for physical restaurant visits?
+                        </h4>
+<p class="text-on-surface-variant font-body-md pl-9">We utilize advanced conversion tracking including Google Store Visit Conversions, reservation platform integrations (OpenTable/Resy), and unique promotional codes to attribute digital spend to physical dining revenue.</p>
+</div>
+<div class="bg-white p-8 rounded-xl border border-surface-container shadow-sm">
+<h4 class="font-headline-sm text-xl mb-3 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="help_outline">help_outline</span>
+                            What is the typical ramp-up period?
+                        </h4>
+<p class="text-on-surface-variant font-body-md pl-9">Local visibility improvements usually manifest within 30-45 days, while paid performance campaigns often see positive ROI within the first 14 days of active deployment.</p>
+</div>
+<div class="bg-white p-8 rounded-xl border border-surface-container shadow-sm">
+<h4 class="font-headline-sm text-xl mb-3 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="help_outline">help_outline</span>
+                            Do you work with single-location establishments?
+                        </h4>
+<p class="text-on-surface-variant font-body-md pl-9">Yes, we partner with high-potential single-unit restaurants that are ready to professionalize their marketing, as well as established hospitality groups with multiple concepts.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-32 bg-white relative overflow-hidden">
+<div class="absolute inset-0 opacity-5 pointer-events-none">
+<div class="absolute top-0 right-0 w-96 h-96 bg-primary rounded-full blur-[120px]"></div>
+<div class="absolute bottom-0 left-0 w-96 h-96 bg-primary-container rounded-full blur-[120px]"></div>
+</div>
+<div class="max-w-7xl mx-auto px-8 relative text-center">
+<div class="inline-block px-4 py-1.5 bg-primary-fixed rounded-full text-primary font-label-caps text-[10px] mb-8">Ready to Scale?</div>
+<h2 class="font-display-lg text-display-lg mb-8 max-w-3xl mx-auto">Elevate your establishment's <span class="italic">digital authority</span> today.</h2>
+<div class="flex flex-col sm:flex-row justify-center items-center gap-6">
+<button class="bg-primary text-on-primary px-10 py-5 rounded-full font-button text-button shadow-xl shadow-primary/20 hover:-translate-y-1 transition-all">
+                        Schedule A Discovery Call
+                    </button>
+<a class="text-on-surface-variant font-button hover:text-primary transition-colors border-b border-surface-container pb-1" href="mailto:growth@mdastra.com">
+                        growth@mdastra.com
+                    </a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 px-8 border-t border-[#F3EFFF] dark:border-slate-800 bg-white dark:bg-slate-950">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+<img src="../assets/WhatsApp_Image_2026-04-20_at_19.25.35-removebg-preview.png" alt="MD Astra Logo" class="h-24 w-auto object-contain mb-4 mix-blend-multiply dark:mix-blend-normal">
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-['Newsreader'] italic text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 hover:underline decoration-[#9D72FF] underline-offset-4 transition-opacity duration-200" href="../book_an_appointment/code.html">About</a>
+<a class="font-['Newsreader'] italic text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 hover:underline decoration-[#9D72FF] underline-offset-4 transition-opacity duration-200" href="../book_an_appointment/code.html">Careers</a>
+<a class="font-['Newsreader'] italic text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 hover:underline decoration-[#9D72FF] underline-offset-4 transition-opacity duration-200" href="../book_an_appointment/code.html">Privacy</a>
+<a class="font-['Newsreader'] italic text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 hover:underline decoration-[#9D72FF] underline-offset-4 transition-opacity duration-200" href="../book_an_appointment/code.html">Terms</a>
+<a class="font-['Newsreader'] italic text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 hover:underline decoration-[#9D72FF] underline-offset-4 transition-opacity duration-200" href="../book_an_appointment/code.html">Contact</a>
+</div>
+<p class="font-['Newsreader'] italic text-slate-500 text-sm">© 2024 MD Astra. Precision Marketing for Modern Enterprises.</p>
+</div>
+</footer>
+</body></html>

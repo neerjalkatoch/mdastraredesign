@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface": "#1d1929",
+                    "on-tertiary-fixed-variant": "#5f4100",
+                    "on-error-container": "#93000a",
+                    "on-surface-variant": "#4a4454",
+                    "surface": "#fdf7ff",
+                    "tertiary-container": "#9a6c00",
+                    "on-secondary-container": "#656370",
+                    "surface-container": "#f3eaff",
+                    "error-container": "#ffdad6",
+                    "outline-variant": "#cbc3d6",
+                    "primary-fixed": "#e9ddff",
+                    "secondary": "#5f5d6a",
+                    "error": "#ba1a1a",
+                    "surface-container-high": "#ede4fb",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-fixed-variant": "#5520b3",
+                    "on-primary-fixed": "#23005b",
+                    "surface-tint": "#6d40cc",
+                    "primary": "#6b3dca",
+                    "on-secondary": "#ffffff",
+                    "surface-variant": "#e7dff6",
+                    "secondary-container": "#e4e0f0",
+                    "on-secondary-fixed-variant": "#474552",
+                    "inverse-surface": "#322e3f",
+                    "outline": "#7b7485",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed": "#1b1a25",
+                    "on-primary-container": "#fffbff",
+                    "tertiary": "#7b5500",
+                    "primary-fixed-dim": "#d1bcff",
+                    "secondary-fixed-dim": "#c8c4d4",
+                    "surface-bright": "#fdf7ff",
+                    "on-tertiary-fixed": "#271900",
+                    "surface-container-highest": "#e7dff6",
+                    "surface-container-low": "#f8f1ff",
+                    "primary-container": "#8458e4",
+                    "on-background": "#1d1929",
+                    "on-tertiary-container": "#fffbff",
+                    "inverse-on-surface": "#f5eeff",
+                    "secondary-fixed": "#e4e0f0",
+                    "on-error": "#ffffff",
+                    "inverse-primary": "#d1bcff",
+                    "background": "#fdf7ff",
+                    "tertiary-fixed-dim": "#fbbb45",
+                    "tertiary-fixed": "#ffdeab",
+                    "surface-dim": "#dfd6ed",
+                    "on-primary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "gutter": "32px",
+                    "unit": "8px",
+                    "container-max": "1200px",
+                    "margin-page": "64px",
+                    "section-gap": "128px"
+            },
+            "fontFamily": {
+                    "headline-sm": ["Newsreader"],
+                    "label-caps": ["Inter"],
+                    "button": ["Inter"],
+                    "body-md": ["Newsreader"],
+                    "display-lg": ["Newsreader"],
+                    "headline-md": ["Newsreader"],
+                    "body-lg": ["Newsreader"]
+            },
+            "fontSize": {
+                    "headline-sm": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.08em", "fontWeight": "600"}],
+                    "button": ["14px", {"lineHeight": "1", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "headline-md": ["32px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                    "body-lg": ["20px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-pull-quote {
+            border-left: 4px solid #9D72FF;
+            padding-left: 32px;
+        }
+    </style>
+<link rel="stylesheet" href="../assets/css/site.css" />
+<script src="../assets/js/site.js" defer></script>
+</head>
+<body class="bg-surface-container-lowest text-on-surface antialiased">
+<!-- Navigation Header -->
+<header class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-purple-50 shadow-sm transition-all duration-300">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-8 py-4 h-20">
+        <a href="../homepage_luminous/code.html" class="flex items-center">
+            <img src="../assets/WhatsApp_Image_2026-04-20_at_19.25.35-removebg-preview.png" alt="MD Astra Logo" class="h-14 w-auto object-contain mix-blend-multiply dark:mix-blend-normal">
+        </a>
+        <nav class="hidden md:flex gap-8 items-center">
+            <a class="text-slate-600 hover:text-purple-600 font-medium transition-colors duration-200" href="../homepage_luminous/code.html">Home</a>
+            <a class="text-slate-600 hover:text-purple-600 font-medium transition-colors duration-200" href="../book_an_appointment/code.html">About Us</a>
+            
+            <!-- Services Dropdown -->
+            <div class="relative group">
+                <button class="flex items-center gap-1 text-slate-600 hover:text-purple-600 font-medium transition-colors duration-200 py-2">
+                    Services <span class="material-symbols-outlined text-[20px]">expand_more</span>
+                </button>
+                <div class="absolute left-0 top-full mt-2 w-64 bg-white rounded-xl shadow-xl border border-purple-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-left -translate-y-2 group-hover:translate-y-0 overflow-hidden">
+                    <div class="py-2">
+                        <a href="../seo_services/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">SEO Service</a>
+                        <a href="../website_development/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Website Development</a>
+                        <a href="../social_media_marketing/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Social Media Marketing</a>
+                        <a href="../gmb_management/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">GMB Management</a>
+                        <a href="../content_marketing/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Content Marketing</a>
+                        <a href="../amazon_ghl_marketing/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Amazon & GHL Marketing</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Industries Dropdown -->
+            <div class="relative group">
+                <button class="flex items-center gap-1 text-slate-600 hover:text-purple-600 font-medium transition-colors duration-200 py-2">
+                    Industries <span class="material-symbols-outlined text-[20px]">expand_more</span>
+                </button>
+                <div class="absolute left-0 top-full mt-2 w-64 bg-white rounded-xl shadow-xl border border-purple-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-left -translate-y-2 group-hover:translate-y-0 overflow-hidden">
+                    <div class="py-2">
+                        <a href="../real_estate_marketing_bright/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Real Estate</a>
+                        <a href="../healthcare_marketing_bright/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Healthcare</a>
+                        <a href="../restaurant_marketing_bright/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Restaurants</a>
+                        <a href="../ecommerce_marketing_bright/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Ecommerce</a>
+                        <a href="../legal_marketing_bright/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Legal Services</a>
+                        <a href="../education_marketing_bright/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Education & Coaching</a>
+                        <a href="../local_services_marketing_bright/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Local Services</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <a href="../book_an_appointment/code.html" class="bg-purple-600 text-white px-6 py-2.5 rounded-full font-medium text-sm hover:bg-purple-700 transition-colors shadow-sm">Get Started</a>
+    </div>
+</header>
+<main class="pt-32">
+<section class="max-w-7xl mx-auto px-8 mb-section-gap">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 space-y-8">
+<span class="font-label-caps text-label-caps text-[#9D72FF]">FASHION &amp; LIFESTYLE PRESTIGE</span>
+<h1 class="font-display-lg text-display-lg text-on-surface">Where <span class="italic font-normal">Elegance</span> Meets Growth.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">We partner with heritage houses and modern labels to bridge the gap between creative vision and commercial dominance through high-performance digital architecture.</p>
+<div class="flex gap-4">
+<button class="bg-[#9D72FF] text-white px-8 py-4 font-button text-button rounded-lg transition-transform active:scale-95">Elevate Your Brand</button>
+<button class="border border-[#9D72FF] text-[#9D72FF] px-8 py-4 font-button text-button rounded-lg hover:bg-[#F3EFFF] transition-colors">View Portfolio</button>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="Sophisticated high-fashion editorial shot of silk fabric draping over a minimalist chair in a sun-drenched Parisian studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDweJagOIvrwr4_7NWwzDs1dRhGadnxoG7s1MXteBu68kms4I9FasLdZNSwyW71iUKqhxSjdTCFhUj9XOh6rVR_LRLBD8JppCAjRsKaf7UlkW5RWQl3dMhf-QOTKpp5YNqDWVRRPK_jG71CLgGvn3AFqP05ioixY2fWc6tLreE6WcX3vR3iHJ3ctk9t-fQw7dAQ9-6zD9p01TrLkylqAKFk6Iwd24LfgVvRvcDGDbcDm3Vf0nOxFeoq9MYQy2KUFm6_LY_zz3N2xo"/>
+</div>
+<div class="absolute -bottom-8 -left-8 bg-white p-8 rounded-lg shadow-xl max-w-xs border border-[#F3EFFF]">
+<p class="font-headline-sm text-headline-sm text-[#9D72FF] mb-2">+124%</p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-tight">Average growth in Direct-to-Consumer revenue for luxury clients in 2023.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-surface-container py-section-gap">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-24">
+<span class="font-label-caps text-label-caps text-[#9D72FF] mb-4 block">THE ARCHITECTURE OF SUCCESS</span>
+<h2 class="font-headline-md text-headline-md">Our Fashion Growth Framework</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-16 gap-x-12">
+<div class="space-y-4">
+<div class="font-headline-md text-headline-md text-[#9D72FF]/30 font-['Newsreader']">01</div>
+<h3 class="font-headline-sm text-headline-sm">Brand Audit</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Deep dive into current positioning, creative assets, and market sentiment.</p>
+</div>
+<div class="space-y-4">
+<div class="font-headline-md text-headline-md text-[#9D72FF]/30 font-['Newsreader']">02</div>
+<h3 class="font-headline-sm text-headline-sm">Visual Strategy</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Elevating aesthetic consistency across all digital touchpoints.</p>
+</div>
+<div class="space-y-4">
+<div class="font-headline-md text-headline-md text-[#9D72FF]/30 font-['Newsreader']">03</div>
+<h3 class="font-headline-sm text-headline-sm">DTC Optimization</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Removing friction from the shopping journey for high-ticket items.</p>
+</div>
+<div class="space-y-4">
+<div class="font-headline-md text-headline-md text-[#9D72FF]/30 font-['Newsreader']">04</div>
+<h3 class="font-headline-sm text-headline-sm">Acquisition</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Precision-targeted media buying that respects brand heritage.</p>
+</div>
+<div class="space-y-4">
+<div class="font-headline-md text-headline-md text-[#9D72FF]/30 font-['Newsreader']">05</div>
+<h3 class="font-headline-sm text-headline-sm">Community</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Building a loyal ecosystem of advocates and repeat buyers.</p>
+</div>
+<div class="space-y-4">
+<div class="font-headline-md text-headline-md text-[#9D72FF]/30 font-['Newsreader']">06</div>
+<h3 class="font-headline-sm text-headline-sm">Scaling</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Leveraging omnichannel data to expand into new global markets.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="max-w-7xl mx-auto px-8 py-section-gap">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<div class="bg-white p-12 border border-[#F3EFFF] rounded-xl hover:shadow-[0_4px_20px_-10px_rgba(157,114,255,0.08)] transition-all">
+<span class="material-symbols-outlined text-[#9D72FF] mb-6" style="font-size: 48px;">brush</span>
+<h3 class="font-headline-sm text-headline-sm mb-4">Hyper-Personalized Creative</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Dynamic creative assets that adapt to the individual viewer's style preferences in real-time.</p>
+</div>
+<div class="bg-white p-12 border border-[#F3EFFF] rounded-xl hover:shadow-[0_4px_20px_-10px_rgba(157,114,255,0.08)] transition-all">
+<span class="material-symbols-outlined text-[#9D72FF] mb-6" style="font-size: 48px;">groups</span>
+<h3 class="font-headline-sm text-headline-sm mb-4">Influencer Ecosystem</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Curation of talent that aligns with your brand values, moving beyond reach to true cultural influence.</p>
+</div>
+<div class="bg-white p-12 border border-[#F3EFFF] rounded-xl hover:shadow-[0_4px_20px_-10px_rgba(157,114,255,0.08)] transition-all">
+<span class="material-symbols-outlined text-[#9D72FF] mb-6" style="font-size: 48px;">hub</span>
+<h3 class="font-headline-sm text-headline-sm mb-4">Omnichannel Scale</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">A unified digital strategy that synchronizes your online storefront with retail boutiques worldwide.</p>
+</div>
+</div>
+</section>
+<section class="bg-[#F3EFFF]/30 py-section-gap overflow-hidden">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<div class="relative">
+<div class="aspect-square rounded-full overflow-hidden border-8 border-white shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="High-contrast close up of luxury watch and tailored suit sleeve with soft cinematic lighting and elegant shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmiGY5way_rMNhi_BonOMZN5bHjhUitZ-KU3frOuDC5nYTb2vDeIpIfXgOtiybf1za9r6JJ3ZW3fOv85POhSzxyPZ0DZmuyEuZhEYai32Q4ePVpRzNCNbu7hjSwHhS4-DMMrfpH72s-Xa5HF4Xg2E3gHsYgQQPPgPncwLdvMKNp-2aUobKWsLHuzPTOc0kGIzhbKB-3-sCybZEuOL3my8MeMvOnBPvnDsLQdzTAJ8OfA2cH3miFefGPNkqPEd2qw-xrnUZv9TVMoo"/>
+</div>
+<div class="absolute top-0 right-0 w-32 h-32 bg-[#9D72FF] rounded-full blur-3xl opacity-20"></div>
+</div>
+<div class="space-y-8">
+<h2 class="font-headline-md text-headline-md">The Difference is Measured in Prestige</h2>
+<div class="editorial-pull-quote">
+<p class="font-body-lg text-body-lg italic text-on-surface-variant">"Luxury is not just a price point; it is a meticulous attention to detail that translates across every pixel of the user experience."</p>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">We don't just drive traffic. We curate an audience. Our approach ensures that scaling your revenue never comes at the cost of brand equity or exclusivity.</p>
+<ul class="space-y-4">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#9D72FF]">check_circle</span>
+<span class="font-body-md text-body-md">Zero-friction luxury checkout paths</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#9D72FF]">check_circle</span>
+<span class="font-body-md text-body-md">Global inventory intelligence</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#9D72FF]">check_circle</span>
+<span class="font-body-md text-body-md">Predictive demand modeling</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class="max-w-7xl mx-auto px-8 py-section-gap">
+<div class="text-center mb-24">
+<h2 class="font-headline-md text-headline-md mb-4">Voice of the Collection</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">Hear from the founders and creative directors who have transformed their digital trajectory with our framework.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-white p-12 border border-[#F3EFFF] rounded-xl">
+<div class="flex gap-1 mb-6">
+<span class="material-symbols-outlined text-[#9D72FF]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[#9D72FF]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[#9D72FF]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[#9D72FF]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[#9D72FF]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-lg text-body-lg italic mb-8">"MD Astra didn't just grow our numbers; they understood our soul. They translated our runway energy into a digital storefront that finally feels like us."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Portrait of a creative director, middle aged man with stylish glasses in a minimalist studio environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9MJh69kOry8LGod4p-WuT-JMGFfhTFK9XwinEl4JBthazmBV9dn2qXf6BaTHE3MHn1k_tq7kUfBPwTB84ThYcym8iaSQHzbqR1Jcf6rHnH3BpKzwIEFSjhyPFbEdmq7Vksh09FKESj7nF0c0yIJe54D44AGDvBQURcJTikT6BjUxEIQK2J-OqRFPFkGvIlUgeKnENCg_u1I_tzjW0yF8K69kWBxgFw28GveiINFPmT3xVTVrRzGJnjvhKkanGRrDwVE4egCTGV1Q"/>
+</div>
+<div>
+<p class="font-label-caps text-label-caps">Julian Vane</p>
+<p class="text-xs text-on-surface-variant font-['Inter'] uppercase tracking-wider">Creative Director, Vane Atelier</p>
+</div>
+</div>
+</div>
+<div class="bg-white p-12 border border-[#F3EFFF] rounded-xl">
+<div class="flex gap-1 mb-6">
+<span class="material-symbols-outlined text-[#9D72FF]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[#9D72FF]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[#9D72FF]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[#9D72FF]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[#9D72FF]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-lg text-body-lg italic mb-8">"The level of technical sophistication they bring to the table is rare. Our conversion rates doubled within three months of implementing their framework."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Professional portrait of a female fashion entrepreneur in a clean, modern white office" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2V2EqmmRmP5FbngntrK7K_qXtIRdTeESpnZo9u4D9Pvq74CZN3zlZ4uTi6jOpzN-KwpOf3aHEez8LQpkmcWkDrC2ZwMTrxKOUpzppy9xVfLaDikNbiD0r3IU0MZjTPmup5N4GhHwBhwVV66OVcUp64aepnX88OREXf2rypSlYIDjpcDWjsN4ADgC60o1UNF-IsiLN6HblioRnH65dQiwm6qXANQiLuM1gu0jM89SoA7h577AeRAom1nGmbpgeljwrbmS0p8QUNlg"/>
+</div>
+<div>
+<p class="font-label-caps text-label-caps">Elena Rossi</p>
+<p class="text-xs text-on-surface-variant font-['Inter'] uppercase tracking-wider">Founder, Rossi Jewelry</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="max-w-4xl mx-auto px-8 py-section-gap">
+<h2 class="font-headline-md text-headline-md mb-12 text-center">Frequently Requested Insights</h2>
+<div class="space-y-6">
+<details class="group bg-white border border-[#F3EFFF] rounded-lg p-6 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between cursor-pointer">
+<h3 class="font-headline-sm text-headline-sm">How do you handle brand heritage while scaling?</h3>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="mt-4 font-body-md text-body-md text-on-surface-variant">We treat heritage as your primary competitive advantage. Our scaling methods focus on qualitative growth—reaching the right high-net-worth individuals rather than mass-market saturation that dilutes brand equity.</p>
+</details>
+<details class="group bg-white border border-[#F3EFFF] rounded-lg p-6 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between cursor-pointer">
+<h3 class="font-headline-sm text-headline-sm">What platforms do you specialize in?</h3>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="mt-4 font-body-md text-body-md text-on-surface-variant">While we are platform-agnostic, we typically recommend headless Shopify Plus or custom-built Commercetools architectures for the flexibility required by luxury labels.</p>
+</details>
+<details class="group bg-white border border-[#F3EFFF] rounded-lg p-6 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between cursor-pointer">
+<h3 class="font-headline-sm text-headline-sm">What is the average duration of a partnership?</h3>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="mt-4 font-body-md text-body-md text-on-surface-variant">Our Growth Framework is designed for long-term evolution. Most partnerships begin with a 12-month roadmap, with many clients staying for 3+ years as we scale through global territories.</p>
+</details>
+</div>
+</section>
+<section class="max-w-7xl mx-auto px-8 py-section-gap">
+<div class="bg-white border border-[#F3EFFF] rounded-2xl overflow-hidden shadow-sm grid grid-cols-1 lg:grid-cols-2">
+<div class="p-16 space-y-8">
+<h2 class="font-headline-md text-headline-md">Begin Your Elevation</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Submit your brand for a preliminary digital prestige audit. Our team will review your current positioning and prepare a growth strategy session.</p>
+<form class="space-y-6">
+<div>
+<label class="font-label-caps text-label-caps mb-2 block">FULL NAME</label>
+<input class="w-full bg-white border-b-2 border-[#F3EFFF] focus:border-[#9D72FF] outline-none py-3 font-body-md text-body-md transition-colors" placeholder="Alexander McQueen" type="text"/>
+</div>
+<div>
+<label class="font-label-caps text-label-caps mb-2 block">BRAND DOMAIN</label>
+<input class="w-full bg-white border-b-2 border-[#F3EFFF] focus:border-[#9D72FF] outline-none py-3 font-body-md text-body-md transition-colors" placeholder="brand.com" type="url"/>
+</div>
+<div>
+<label class="font-label-caps text-label-caps mb-2 block">INQUIRY TYPE</label>
+<select class="w-full bg-white border-b-2 border-[#F3EFFF] focus:border-[#9D72FF] outline-none py-3 font-body-md text-body-md transition-colors">
+<option>Growth Framework Implementation</option>
+<option>Creative Performance Optimization</option>
+<option>Global Omnichannel Scaling</option>
+</select>
+</div>
+<button class="w-full bg-[#9D72FF] text-white py-4 font-button text-button rounded-lg transition-transform active:scale-95 mt-4">Send Inquiry</button>
+</form>
+</div>
+<div class="hidden lg:block relative">
+<img class="w-full h-full object-cover" data-alt="Minimalist luxury retail interior with soft light, warm wood textures, and premium clothing on brass racks" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyTVAAVbCqmUD_8eWlcrdTZtnCC5p7euHXoL4DU3wOS4gklnyB6vH0bh8O8aIZMMWZZm2nB-WkpcCZvOkPaUOjKNxdnqeY_nWGSezvZkBKW7-IJ1guJl2zpgxF5Enn4zfZtvY_weZQVlcuXuIzg5z0aCvuM4zdLL8c_GHYMEQPyszk5kaTIVzpgbdrV-LiKkAKKvJWvhRUXm12QHDlOS8BNsCbvt-Ji2UhRetQEwYlQw5fgCmUk_ts9E_wQFmxNaGJYWoFn7S40Cw"/>
+</div>
+</div>
+</section>
+</main>
+<footer class="w-full py-24 mt-32 bg-[#F3EFFF] dark:bg-slate-900/50 border-t border-[#9D72FF]/10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 px-12 max-w-7xl mx-auto text-center md:text-left">
+<div class="space-y-6">
+<img src="../assets/WhatsApp_Image_2026-04-20_at_19.25.35-removebg-preview.png" alt="MD Astra Logo" class="h-24 w-auto object-contain mb-4 mix-blend-multiply dark:mix-blend-normal">
+<p class="font-['Newsreader'] text-base text-slate-700 dark:text-slate-300 max-w-sm">Crafting digital prestige for the world's most ambitious fashion and lifestyle brands.</p>
+<p class="font-['Newsreader'] text-base text-slate-700 dark:text-slate-300">© 2024 MD Astra Digital. All rights reserved.</p>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div class="flex flex-col gap-4">
+<h4 class="font-label-caps text-label-caps text-[#9D72FF]">PRACTICES</h4>
+<a class="font-['Newsreader'] text-base text-slate-500 hover:text-[#9D72FF] hover:translate-x-1 transition-transform duration-200" href="../book_an_appointment/code.html">Growth Framework</a>
+<a class="font-['Newsreader'] text-base text-slate-500 hover:text-[#9D72FF] hover:translate-x-1 transition-transform duration-200" href="../book_an_appointment/code.html">Creative Ops</a>
+<a class="font-['Newsreader'] text-base text-slate-500 hover:text-[#9D72FF] hover:translate-x-1 transition-transform duration-200" href="../book_an_appointment/code.html">Data Analytics</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-caps text-label-caps text-[#9D72FF]">COMPANY</h4>
+<a class="font-['Newsreader'] text-base text-slate-500 hover:text-[#9D72FF] hover:translate-x-1 transition-transform duration-200" href="../book_an_appointment/code.html">Privacy Policy</a>
+<a class="font-['Newsreader'] text-base text-slate-500 hover:text-[#9D72FF] hover:translate-x-1 transition-transform duration-200" href="../book_an_appointment/code.html">Terms of Service</a>
+<a class="font-['Newsreader'] text-base text-slate-500 hover:text-[#9D72FF] hover:translate-x-1 transition-transform duration-200" href="../book_an_appointment/code.html">Contact</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

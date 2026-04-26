@@ -1,0 +1,535 @@
+/* Local Service Business Page */
+
+/* Hero Section */
+.lsb-hero {
+  padding: var(--section-padding) 0;
+}
+
+.lsb-hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.lsb-hero-content h1 {
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+
+.lsb-hero-subtitle {
+  font-size: clamp(1.125rem, 2vw, 1.375rem);
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2rem;
+}
+
+.lsb-hero-description {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.lsb-hero-description p {
+  font-size: 1.0625rem;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+}
+
+.lsb-hero-tagline {
+  font-size: 1.125rem;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+/* Services Section */
+.lsb-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.lsb-service-card {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 2rem 1.75rem;
+  transition: all var(--transition-base);
+}
+
+.lsb-service-card:hover {
+  border-color: var(--color-border-dark);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.lsb-service-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-primary-bg);
+  border-radius: var(--radius-md);
+  color: var(--color-primary);
+  margin-bottom: 1.25rem;
+  transition: all var(--transition-base);
+}
+
+.lsb-service-card:hover .lsb-service-icon {
+  background: var(--color-primary);
+  color: #ffffff;
+}
+
+.lsb-service-card h3 {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.lsb-service-card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.lsb-service-card li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.625rem;
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.lsb-service-card li svg {
+  flex-shrink: 0;
+  margin-top: 0.125rem;
+  color: var(--color-success);
+}
+
+/* Framework Section */
+.lsb-framework-intro {
+  max-width: 750px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.lsb-framework-intro p {
+  font-size: 1.0625rem;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+}
+
+.lsb-framework-steps {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.lsb-framework-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  background: var(--color-bg-subtle);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  transition: all var(--transition-base);
+}
+
+.lsb-framework-step:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-md);
+}
+
+.lsb-step-number {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-primary);
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: var(--radius-md);
+}
+
+.lsb-step-content h3 {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 0.625rem;
+  line-height: 1.3;
+}
+
+.lsb-step-content p {
+  font-size: 0.9375rem;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+}
+
+/* Benefits Section */
+.lsb-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.lsb-benefits-card {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  transition: all var(--transition-base);
+}
+
+.lsb-benefits-card:hover {
+  border-color: var(--color-border-dark);
+  box-shadow: var(--shadow-md);
+}
+
+.lsb-benefits-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.lsb-benefits-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
+  flex-shrink: 0;
+}
+
+.lsb-icon-positive {
+  background: #ecfdf5;
+  color: var(--color-success);
+}
+
+.lsb-icon-negative {
+  background: #fef3f2;
+  color: var(--color-text-muted);
+}
+
+.lsb-benefits-header h3 {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-text);
+  line-height: 1.3;
+}
+
+.lsb-benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+
+.lsb-benefits-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.9375rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.lsb-benefits-list li svg {
+  flex-shrink: 0;
+  margin-top: 0.125rem;
+}
+
+.lsb-benefits-positive .lsb-benefits-list li svg {
+  color: var(--color-success);
+}
+
+.lsb-benefits-negative .lsb-benefits-list li svg {
+  color: var(--color-text-muted);
+}
+
+.lsb-benefits-conclusion {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.lsb-benefits-conclusion p {
+  font-size: 0.9375rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+}
+
+.lsb-conclusion-highlight {
+  font-size: 1rem;
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+/* Why Choose Section */
+.lsb-why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.lsb-why-card {
+  background: var(--color-bg-subtle);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 2rem 1.75rem;
+  text-align: center;
+  transition: all var(--transition-base);
+}
+
+.lsb-why-card:hover {
+  border-color: var(--color-primary);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.lsb-why-icon {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-primary);
+  color: #ffffff;
+  border-radius: var(--radius-md);
+  margin: 0 auto 1.25rem;
+  transition: all var(--transition-base);
+}
+
+.lsb-why-card:hover .lsb-why-icon {
+  background: var(--color-primary-dark);
+  transform: scale(1.05);
+}
+
+.lsb-why-card h3 {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+}
+
+.lsb-why-card p {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+/* FAQ Section */
+.lsb-faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.lsb-faq-item {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: all var(--transition-base);
+}
+
+.lsb-faq-item:hover {
+  border-color: var(--color-border-dark);
+}
+
+.lsb-faq-item.open {
+  border-color: var(--color-primary);
+}
+
+.lsb-faq-trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  padding: 1.25rem;
+  text-align: left;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.lsb-faq-trigger:hover {
+  background: var(--color-bg-subtle);
+}
+
+.lsb-faq-icon {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-primary-bg);
+  border-radius: var(--radius-sm);
+  color: var(--color-primary);
+  transition: all var(--transition-base);
+}
+
+.lsb-faq-item.open .lsb-faq-icon {
+  background: var(--color-primary);
+  color: #ffffff;
+}
+
+.lsb-faq-question {
+  flex: 1;
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--color-text);
+  line-height: 1.4;
+}
+
+.lsb-faq-chevron {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-muted);
+  transition: all var(--transition-base);
+}
+
+.lsb-faq-item.open .lsb-faq-chevron {
+  transform: rotate(180deg);
+  color: var(--color-primary);
+}
+
+.lsb-faq-content {
+  overflow: hidden;
+}
+
+.lsb-faq-content p {
+  padding: 0 1.25rem 1.25rem calc(1.25rem + 36px + 0.875rem);
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+}
+
+/* CTA Section */
+.lsb-cta {
+  background: var(--gradient-purple-light);
+  text-align: center;
+}
+
+.lsb-cta-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.lsb-cta-content h2 {
+  margin-bottom: 1.25rem;
+}
+
+.lsb-cta-content p {
+  font-size: 1.0625rem;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.lsb-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .lsb-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .lsb-why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .lsb-hero {
+    padding: var(--section-padding) 0;
+  }
+
+  .lsb-services-grid,
+  .lsb-benefits-grid,
+  .lsb-why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .lsb-framework-step {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .lsb-step-number {
+    width: 50px;
+    height: 50px;
+    font-size: 1.25rem;
+  }
+
+  .lsb-cta-actions {
+    flex-direction: column;
+  }
+
+  .lsb-cta-actions .btn {
+    width: 100%;
+  }
+
+  .lsb-faq-trigger {
+    padding: 1rem;
+    gap: 0.75rem;
+  }
+
+  .lsb-faq-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .lsb-faq-question {
+    font-size: 0.875rem;
+  }
+
+  .lsb-faq-content p {
+    padding: 0 1rem 1rem calc(1rem + 32px + 0.75rem);
+    font-size: 0.8125rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .lsb-service-card,
+  .lsb-benefits-card,
+  .lsb-why-card {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .lsb-faq-content p {
+    padding: 0 1rem 1rem;
+  }
+}

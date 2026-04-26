@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface": "#1d1929",
+                        "on-tertiary-fixed-variant": "#5f4100",
+                        "on-error-container": "#93000a",
+                        "on-surface-variant": "#4a4454",
+                        "surface": "#fdf7ff",
+                        "tertiary-container": "#9a6c00",
+                        "on-secondary-container": "#656370",
+                        "surface-container": "#f3eaff",
+                        "error-container": "#ffdad6",
+                        "outline-variant": "#cbc3d6",
+                        "primary-fixed": "#e9ddff",
+                        "secondary": "#5f5d6a",
+                        "error": "#ba1a1a",
+                        "surface-container-high": "#ede4fb",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed-variant": "#5520b3",
+                        "on-primary-fixed": "#23005b",
+                        "surface-tint": "#6d40cc",
+                        "primary": "#6b3dca",
+                        "on-secondary": "#ffffff",
+                        "surface-variant": "#e7dff6",
+                        "secondary-container": "#e4e0f0",
+                        "on-secondary-fixed-variant": "#474552",
+                        "inverse-surface": "#322e3f",
+                        "outline": "#7b7485",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed": "#1b1a25",
+                        "on-primary-container": "#fffbff",
+                        "tertiary": "#7b5500",
+                        "primary-fixed-dim": "#d1bcff",
+                        "secondary-fixed-dim": "#c8c4d4",
+                        "surface-bright": "#fdf7ff",
+                        "on-tertiary-fixed": "#271900",
+                        "surface-container-highest": "#e7dff6",
+                        "surface-container-low": "#f8f1ff",
+                        "primary-container": "#8458e4",
+                        "on-background": "#1d1929",
+                        "on-tertiary-container": "#fffbff",
+                        "inverse-on-surface": "#f5eeff",
+                        "secondary-fixed": "#e4e0f0",
+                        "on-error": "#ffffff",
+                        "inverse-primary": "#d1bcff",
+                        "background": "#fdf7ff",
+                        "tertiary-fixed-dim": "#fbbb45",
+                        "tertiary-fixed": "#ffdeab",
+                        "surface-dim": "#dfd6ed",
+                        "on-primary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "32px",
+                        "unit": "8px",
+                        "container-max": "1200px",
+                        "margin-page": "64px",
+                        "section-gap": "128px"
+                    },
+                    "fontFamily": {
+                        "headline-sm": ["Newsreader"],
+                        "label-caps": ["Inter"],
+                        "button": ["Inter"],
+                        "body-md": ["Newsreader"],
+                        "display-lg": ["Newsreader"],
+                        "headline-md": ["Newsreader"],
+                        "body-lg": ["Newsreader"]
+                    },
+                    "fontSize": {
+                        "headline-sm": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                        "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.08em", "fontWeight": "600"}],
+                        "button": ["14px", {"lineHeight": "1", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "headline-md": ["32px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                        "body-lg": ["20px", {"lineHeight": "1.6", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .editorial-accent {
+            border-left: 4px solid #9D72FF;
+            padding-left: 24px;
+        }
+        .shadow-ambient {
+            box-shadow: 0 10px 40px -15px rgba(157, 114, 255, 0.08);
+        }
+    </style>
+<link rel="stylesheet" href="../assets/css/site.css" />
+<script src="../assets/js/site.js" defer></script>
+</head>
+<body class="bg-surface-container-lowest text-on-surface font-body-md overflow-x-hidden">
+<!-- Navigation Header -->
+<header class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-purple-50 shadow-sm transition-all duration-300">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-8 py-4 h-20">
+        <a href="../homepage_luminous/code.html" class="flex items-center">
+            <img src="../assets/WhatsApp_Image_2026-04-20_at_19.25.35-removebg-preview.png" alt="MD Astra Logo" class="h-14 w-auto object-contain mix-blend-multiply dark:mix-blend-normal">
+        </a>
+        <nav class="hidden md:flex gap-8 items-center">
+            <a class="text-slate-600 hover:text-purple-600 font-medium transition-colors duration-200" href="../homepage_luminous/code.html">Home</a>
+            <a class="text-slate-600 hover:text-purple-600 font-medium transition-colors duration-200" href="../book_an_appointment/code.html">About Us</a>
+            
+            <!-- Services Dropdown -->
+            <div class="relative group">
+                <button class="flex items-center gap-1 text-slate-600 hover:text-purple-600 font-medium transition-colors duration-200 py-2">
+                    Services <span class="material-symbols-outlined text-[20px]">expand_more</span>
+                </button>
+                <div class="absolute left-0 top-full mt-2 w-64 bg-white rounded-xl shadow-xl border border-purple-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-left -translate-y-2 group-hover:translate-y-0 overflow-hidden">
+                    <div class="py-2">
+                        <a href="../seo_services/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">SEO Service</a>
+                        <a href="../website_development/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Website Development</a>
+                        <a href="../social_media_marketing/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Social Media Marketing</a>
+                        <a href="../gmb_management/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">GMB Management</a>
+                        <a href="../content_marketing/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Content Marketing</a>
+                        <a href="../amazon_ghl_marketing/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Amazon & GHL Marketing</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Industries Dropdown -->
+            <div class="relative group">
+                <button class="flex items-center gap-1 text-slate-600 hover:text-purple-600 font-medium transition-colors duration-200 py-2">
+                    Industries <span class="material-symbols-outlined text-[20px]">expand_more</span>
+                </button>
+                <div class="absolute left-0 top-full mt-2 w-64 bg-white rounded-xl shadow-xl border border-purple-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-left -translate-y-2 group-hover:translate-y-0 overflow-hidden">
+                    <div class="py-2">
+                        <a href="../real_estate_marketing_bright/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Real Estate</a>
+                        <a href="../healthcare_marketing_bright/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Healthcare</a>
+                        <a href="../restaurant_marketing_bright/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Restaurants</a>
+                        <a href="../ecommerce_marketing_bright/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Ecommerce</a>
+                        <a href="../legal_marketing_bright/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Legal Services</a>
+                        <a href="../education_marketing_bright/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Education & Coaching</a>
+                        <a href="../local_services_marketing_bright/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Local Services</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <a href="../book_an_appointment/code.html" class="bg-purple-600 text-white px-6 py-2.5 rounded-full font-medium text-sm hover:bg-purple-700 transition-colors shadow-sm">Get Started</a>
+    </div>
+</header>
+<!-- Hero Section -->
+<header class="pt-48 pb-32 px-8 max-w-7xl mx-auto text-center">
+<div class="mb-6 inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#F3EFFF] text-[#9D72FF] font-label-caps text-label-caps">
+<span class="material-symbols-outlined text-[16px]" data-icon="auto_awesome">auto_awesome</span>
+            ELITE COACHING SCALE
+        </div>
+<h1 class="font-display-lg text-display-lg md:text-[72px] text-on-surface mb-8 max-w-4xl mx-auto">
+            Scale Your Wisdom <br/><span class="text-[#9D72FF] font-['Newsreader'] italic">to Millions.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-12">
+            The premium growth framework for high-performance coaches and educators ready to transcend the plateau and build an enduring legacy.
+        </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="bg-[#9D72FF] text-white px-10 py-4 rounded-lg font-button text-button hover:opacity-90 transition-all">Apply for Growth Strategy</button>
+<button class="border border-[#9D72FF] text-[#9D72FF] px-10 py-4 rounded-lg font-button text-button hover:bg-[#F3EFFF] transition-all">View Our Method</button>
+</div>
+</header>
+<!-- Hero Image -->
+<section class="px-8 max-w-6xl mx-auto mb-section-gap">
+<div class="rounded-xl overflow-hidden shadow-ambient aspect-[21/9]">
+<img class="w-full h-full object-cover" data-alt="Modern high-end library or educational workspace with soft natural lighting, minimalist furniture, and a sense of calm intellectual rigor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUrPnwexGV-YUWHJp-9evh4McTZJ0Jg3fjwQ66j4HQvLyDu6eudRybGtRjeuXmxEv-2wqCYQeOijYBgh0bkqqDLgIIboJ-PiXjgnpHalouCiKApH0sMiFQxseZPawfnN4OFGfkAjaJjpZGw4JMI8aLH4jZLWagQerK2IFRAh4JGaEuPaIq3aTYSFtnCFMg2KwNg_LCRJt8tY4N3zQ4I5Og2Y2YkfVBWbjnxAfFN2o9dOmHWd-tCQdgGkE7pju8Aibnla7nWeeaioY"/>
+</div>
+</section>
+<!-- Astra Growth Framework (6-step) -->
+<section class="py-24 px-8 bg-[#F3EFFF] mb-section-gap">
+<div class="max-center-container max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-md text-headline-md mb-4">The Astra Growth Framework</h2>
+<p class="text-[#9D72FF] font-['Newsreader'] italic text-lg">A roadmap to intellectual dominance.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Step 1 -->
+<div class="bg-white p-10 rounded-lg border border-[#9D72FF]/10 shadow-ambient">
+<span class="font-['Newsreader'] italic text-4xl text-[#9D72FF]/30 block mb-6">01</span>
+<h3 class="font-headline-sm text-headline-sm mb-4">Intellectual Audit</h3>
+<p class="text-on-surface-variant">Deconstructing your unique methodology to identify scalable intellectual property assets.</p>
+</div>
+<!-- Step 2 -->
+<div class="bg-white p-10 rounded-lg border border-[#9D72FF]/10 shadow-ambient">
+<span class="font-['Newsreader'] italic text-4xl text-[#9D72FF]/30 block mb-6">02</span>
+<h3 class="font-headline-sm text-headline-sm mb-4">Ecosystem Design</h3>
+<p class="text-on-surface-variant">Building the infrastructure for high-retention learning environments and premium student journeys.</p>
+</div>
+<!-- Step 3 -->
+<div class="bg-white p-10 rounded-lg border border-[#9D72FF]/10 shadow-ambient">
+<span class="font-['Newsreader'] italic text-4xl text-[#9D72FF]/30 block mb-6">03</span>
+<h3 class="font-headline-sm text-headline-sm mb-4">Sales Psychology</h3>
+<p class="text-on-surface-variant">Implementing high-conversion messaging that speaks directly to the aspirations of your ideal audience.</p>
+</div>
+<!-- Step 4 -->
+<div class="bg-white p-10 rounded-lg border border-[#9D72FF]/10 shadow-ambient">
+<span class="font-['Newsreader'] italic text-4xl text-[#9D72FF]/30 block mb-6">04</span>
+<h3 class="font-headline-sm text-headline-sm mb-4">Omnichannel Engine</h3>
+<p class="text-on-surface-variant">Deploying precision-targeted advertising across multiple platforms to ensure consistent lead flow.</p>
+</div>
+<!-- Step 5 -->
+<div class="bg-white p-10 rounded-lg border border-[#9D72FF]/10 shadow-ambient">
+<span class="font-['Newsreader'] italic text-4xl text-[#9D72FF]/30 block mb-6">05</span>
+<h3 class="font-headline-sm text-headline-sm mb-4">Operations Alpha</h3>
+<p class="text-on-surface-variant">Streamlining backend systems and team structures to support rapid student enrollment without friction.</p>
+</div>
+<!-- Step 6 -->
+<div class="bg-white p-10 rounded-lg border border-[#9D72FF]/10 shadow-ambient">
+<span class="font-['Newsreader'] italic text-4xl text-[#9D72FF]/30 block mb-6">06</span>
+<h3 class="font-headline-sm text-headline-sm mb-4">Legacy Expansion</h3>
+<p class="text-on-surface-variant">Developing multi-year retention models and brand extensions for long-term category leadership.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Service Grid -->
+<section class="max-w-7xl mx-auto px-8 mb-section-gap">
+<div class="editorial-accent mb-16">
+<h2 class="font-headline-md text-headline-md">Specialized Scaling Systems</h2>
+<p class="text-on-surface-variant max-w-xl">Deep expertise across the three critical pillars of modern education growth.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="group">
+<div class="aspect-square rounded-lg overflow-hidden mb-6">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Professional workshop environment with clean lines, soft purple accent lighting, and a focused creative atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYM2QKNgoCaR63avU4vulGCsl2M6mfnz8pWtPAFUVHyVO7WA02I2zdDWGh5Ca_QrEZSaqnFqmeB83OHber3JN4ZdDNJKRiIWBxwlndkeWvRugtYu8zS8liHZ-E3OJHw77f3BoMHCiFEtKOfvmLsh46KRtJ_ML5Sm-7shMuilTZ_qNYxrRWQn9rX9T6TQ_7W6feyzYVfjsbIqiu-XIHX4pv9_PCx_btlOrKiFQ57A9gX1U34EskzFp3Fhb4mbgNED067281fxoEz8g"/>
+</div>
+<h4 class="font-headline-sm text-headline-sm mb-3">Course Scaling Systems</h4>
+<p class="text-on-surface-variant font-body-md mb-6">Proprietary logic for turning boutique coaching into automated, high-ticket educational machines.</p>
+<div class="flex gap-2">
+<span class="bg-[#F3EFFF] text-[#9D72FF] px-3 py-1 rounded-full text-[11px] font-label-caps">LMS OPTIMIZATION</span>
+<span class="bg-[#F3EFFF] text-[#9D72FF] px-3 py-1 rounded-full text-[11px] font-label-caps">CURRICULUM FLOW</span>
+</div>
+</div>
+<div class="group">
+<div class="aspect-square rounded-lg overflow-hidden mb-6">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="High-end analytics dashboard on a sleek monitor in a minimalist office, reflecting professional growth and data-driven success" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWY6-_p0ATktNBpvSm8_PP2m_1NsToOkwZjBmnJIATYWPIp7L8NW_k5iMRkzXzeBS3qqy09Zwy5QtxolG6RHuKKIBpX9_Vy1gvjhkvPBilPuL6hc-SmEtr_AR5uIq28Giwgwtlq8Q69gSD7N4pxsqX3zsjzRT_b3N4sMZtpEBn9wcrM8K6n4IXxhYEY4ADGVDqfX5809YeS_k_LRaxvmWF7MouotKgXx_r4k975pzSpmRH1tzp2VsJVPYOYXvfW6w3K16dbuSDhSI"/>
+</div>
+<h4 class="font-headline-sm text-headline-sm mb-3">Sales Psych &amp; Narrative</h4>
+<p class="text-on-surface-variant font-body-md mb-6">The science of high-conversion enrollment. We craft the story that makes your wisdom undeniable.</p>
+<div class="flex gap-2">
+<span class="bg-[#F3EFFF] text-[#9D72FF] px-3 py-1 rounded-full text-[11px] font-label-caps">COPYWRITING</span>
+<span class="bg-[#F3EFFF] text-[#9D72FF] px-3 py-1 rounded-full text-[11px] font-label-caps">FUNNEL ARCHITECTURE</span>
+</div>
+</div>
+<div class="group">
+<div class="aspect-square rounded-lg overflow-hidden mb-6">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Abstract visualization of data and light patterns representing omnichannel digital presence and expansive reach" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIDaIQU7g73SgsdlDXgTMtfwXg-HyhCjyIkzgJVW0BAFF9mBebz6EPnohvIBnQjR4ZfK2cCTWhw7Gh9Jqpr5_PFmayUdZhPPAdmjEBI8-8w05BxcMxipWt6-IdAdyF9U-Ggy6StJCCJxDvX0LE4hnNwBDx45Y35bFgN4ZjgG9u31hxu0N9kMp_HmoypYPUX-782wk_ewKrW0oUijeL1GY4UDMv52hlfC6cIwLEhGAKr2KVPrw5tW7JsGgB3AR0sMEniI5fgDVhWlI"/>
+</div>
+<h4 class="font-headline-sm text-headline-sm mb-3">Omnichannel Ads</h4>
+<p class="text-on-surface-variant font-body-md mb-6">Unified traffic strategy across Meta, Google, and YouTube designed for maximum ROI and brand authority.</p>
+<div class="flex gap-2">
+<span class="bg-[#F3EFFF] text-[#9D72FF] px-3 py-1 rounded-full text-[11px] font-label-caps">MEDIA BUYING</span>
+<span class="bg-[#F3EFFF] text-[#9D72FF] px-3 py-1 rounded-full text-[11px] font-label-caps">RETARGETING</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Legacy of Performance -->
+<section class="max-w-7xl mx-auto px-8 mb-section-gap">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="font-headline-md text-headline-md mb-6">A Legacy of Performance</h2>
+<div class="editorial-accent mb-8">
+<p class="font-body-lg text-body-lg italic">"Wisdom is a commodity until it is systematized. We don't just build courses; we build institutions."</p>
+</div>
+<p class="text-on-surface-variant mb-8">
+                    With over $150M in managed revenue for educators globally, MD Astra has defined the standard for the next generation of coaching empires. Our approach is surgical, data-driven, and relentlessly focused on the long-term equity of your brand.
+                </p>
+<div class="grid grid-cols-2 gap-8">
+<div>
+<div class="text-3xl font-bold text-[#9D72FF] mb-1">150M+</div>
+<div class="font-label-caps text-label-caps text-on-surface-variant">REVENUE GENERATED</div>
+</div>
+<div>
+<div class="text-3xl font-bold text-[#9D72FF] mb-1">84%</div>
+<div class="font-label-caps text-label-caps text-on-surface-variant">RETENTION RATE</div>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="absolute -top-4 -left-4 w-24 h-24 bg-[#F3EFFF] rounded-full -z-10"></div>
+<img class="rounded-lg shadow-ambient" data-alt="A professional team in a collaborative meeting, looking over charts and strategic plans in a sunlit modern boardroom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4ZKjinejA9hnJYr3XWBNcFr-Ao9GXEktOAlpnZjegzYKRcfUXGjegZXzmnN_iHOb5Iz488UURGIBdCsta3fHJHlIqmWu7-1T8i45iVFgBWd8RlsYveDhc2J6kETrq14Ry8cjHsJItKQlr9DUlAMzsamZqh5wi4n_UJgFxSxtAdQj4IQfCJ1wCM4YmNn5PlkRBtf6ZffGbbCMU69moU0J5Q1y1WQWVU6n5xfLWlSoPcfTCqupKNMSDwvOb_WiWy8wjIyOHi9r1zes"/>
+<div class="absolute -bottom-6 -right-6 p-8 bg-white border border-[#F3EFFF] rounded-lg shadow-ambient max-w-xs">
+<p class="font-body-md italic mb-4">"Astra didn't just change our funnel; they changed our entire business philosophy."</p>
+<div class="font-label-caps text-label-caps text-[#9D72FF]">Dr. Julian Vane, Peak Health Academics</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="py-24 bg-[#F3EFFF]/50 px-8 mb-section-gap">
+<div class="max-w-7xl mx-auto">
+<div class="flex justify-between items-end mb-16">
+<h2 class="font-headline-md text-headline-md">Voices of Success</h2>
+<a class="text-[#9D72FF] font-button text-button flex items-center gap-2 group" href="../book_an_appointment/code.html">
+                    VIEW CASE STUDIES <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-white p-12 border border-[#9D72FF]/5 rounded-lg">
+<div class="flex gap-1 text-[#9D72FF] mb-6">
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
+</div>
+<p class="font-body-lg text-on-surface mb-8">"We went from a struggling webinar model to a multi-million dollar flagship program in less than 12 months. The precision of their ads is unlike anything I've seen in the industry."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-[#9D72FF]/20 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Professional headshot of a successful coach in a neutral setting with soft studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-K_HyG0--7pW1WbRrhRSB5JaQdW9jRclDBfEIv1UXRytOONPqWt39mT6Pj4Sqgg2S2RTjk6VdVQ17OI2JLl02iPqXO4KF9mE9V6ZyJjg-Xz6jleu0ZejJUGO3IlsCXJVq3Z5RCJ7iR0110ofczqIIwhbx1L-uqG-G42x4Xm9_vzP1KUCmYzODmyuHMDxTSTwrmTldPfXm-R29JEZ6P0mqe6NzNvHal2YiZQjnY3hE9Uta7CxE5gVlJlcu9yZbdCc4s1pn_zfKBFw"/>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-[18px]">Marcus Thorne</div>
+<div class="font-label-caps text-label-caps text-on-surface-variant">Founder, The Executive Edge</div>
+</div>
+</div>
+</div>
+<div class="bg-white p-12 border border-[#9D72FF]/5 rounded-lg">
+<div class="flex gap-1 text-[#9D72FF] mb-6">
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
+</div>
+<p class="font-body-lg text-on-surface mb-8">"The Astra Growth Framework is the only system that actually accounts for the educational experience, not just the sale. Our refund rates dropped by 60% while sales doubled."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-[#9D72FF]/20 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Professional headshot of a confident female educator with a soft, warm background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpCfuWUOPILKWhPQ31H3isTMCeQvoHZiBtR2W_piMvDDYJV58R-7jRERCRw-lvuiZlwTSkZ_itIdoITmacAqQxAwGnFV5Bh1sMpOXP6Vi1zdVzaPwZ_Sz3LNmWQwE5jclCY8Kar2QEDbKfIwTjm7NwvF_TgvHcDcmDzZbVFHOZssX4aFYpTBB2MnMS9w4by5PFeBxFIER5NlFwGoxuUEBAWYovI2Ct_F7XN73kcqO8BpPMAItCW7swQ0X8GPOnL9wYjRpJeuyTdzo"/>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-[18px]">Elena Rossi</div>
+<div class="font-label-caps text-label-caps text-on-surface-variant">CEO, Modern Creative Academy</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="max-w-4xl mx-auto px-8 mb-section-gap">
+<h2 class="font-headline-md text-headline-md text-center mb-12">Strategic Inquiries</h2>
+<div class="space-y-6">
+<div class="border-b border-[#F3EFFF] pb-6">
+<button class="w-full flex justify-between items-center text-left group">
+<span class="font-headline-sm text-headline-sm text-[20px] group-hover:text-[#9D72FF] transition-colors">Who is the Astra Growth Framework for?</span>
+<span class="material-symbols-outlined text-[#9D72FF]" data-icon="expand_more">expand_more</span>
+</button>
+</div>
+<div class="border-b border-[#F3EFFF] pb-6">
+<button class="w-full flex justify-between items-center text-left group">
+<span class="font-headline-sm text-headline-sm text-[20px] group-hover:text-[#9D72FF] transition-colors">Do you manage the entire ad budget?</span>
+<span class="material-symbols-outlined text-[#9D72FF]" data-icon="expand_more">expand_more</span>
+</button>
+</div>
+<div class="border-b border-[#F3EFFF] pb-6">
+<button class="w-full flex justify-between items-center text-left group">
+<span class="font-headline-sm text-headline-sm text-[20px] group-hover:text-[#9D72FF] transition-colors">How long does the implementation take?</span>
+<span class="material-symbols-outlined text-[#9D72FF]" data-icon="expand_more">expand_more</span>
+</button>
+</div>
+<div class="border-b border-[#F3EFFF] pb-6">
+<button class="w-full flex justify-between items-center text-left group">
+<span class="font-headline-sm text-headline-sm text-[20px] group-hover:text-[#9D72FF] transition-colors">Is there a minimum revenue requirement?</span>
+<span class="material-symbols-outlined text-[#9D72FF]" data-icon="expand_more">expand_more</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Contact Form -->
+<section class="max-w-7xl mx-auto px-8 mb-section-gap">
+<div class="bg-white rounded-xl shadow-ambient border border-[#F3EFFF] overflow-hidden flex flex-col md:flex-row">
+<div class="md:w-1/3 bg-[#F3EFFF] p-12">
+<h3 class="font-headline-md text-headline-md mb-6">Initiate Your Scaling Phase</h3>
+<p class="text-on-surface-variant mb-8">Our team reviews each application manually to ensure a perfect alignment of values and vision.</p>
+<div class="space-y-4">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#9D72FF]" data-icon="mail">mail</span>
+<span class="font-body-md">strategy@mdastra.com</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#9D72FF]" data-icon="location_on">location_on</span>
+<span class="font-body-md">Global Digital Office</span>
+</div>
+</div>
+</div>
+<div class="md:w-2/3 p-12">
+<form class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-2">
+<label class="font-label-caps text-label-caps text-on-surface-variant">FULL NAME</label>
+<input class="w-full bg-white border-b-2 border-[#F3EFFF] focus:border-[#9D72FF] outline-none py-2 px-0 transition-colors" placeholder="Arthur Morgan" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-caps text-label-caps text-on-surface-variant">EMAIL ADDRESS</label>
+<input class="w-full bg-white border-b-2 border-[#F3EFFF] focus:border-[#9D72FF] outline-none py-2 px-0 transition-colors" placeholder="arthur@business.com" type="email"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-caps text-label-caps text-on-surface-variant">CURRENT REVENUE</label>
+<select class="w-full bg-white border-b-2 border-[#F3EFFF] focus:border-[#9D72FF] outline-none py-2 px-0 transition-colors">
+<option>$10k - $50k / month</option>
+<option>$50k - $100k / month</option>
+<option>$100k+ / month</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="font-label-caps text-label-caps text-on-surface-variant">CORE SUBJECT MATTER</label>
+<input class="w-full bg-white border-b-2 border-[#F3EFFF] focus:border-[#9D72FF] outline-none py-2 px-0 transition-colors" placeholder="e.g. Health Tech, SaaS Sales" type="text"/>
+</div>
+<div class="md:col-span-2 space-y-2">
+<label class="font-label-caps text-label-caps text-on-surface-variant">MESSAGE</label>
+<textarea class="w-full bg-white border-b-2 border-[#F3EFFF] focus:border-[#9D72FF] outline-none py-2 px-0 transition-colors" placeholder="Tell us about your vision for expansion..." rows="4"></textarea>
+</div>
+<div class="md:col-span-2">
+<button class="bg-[#9D72FF] text-white px-12 py-4 rounded-lg font-button text-button w-full md:w-auto">Submit Application</button>
+</div>
+</form>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full py-24 mt-32 bg-[#F3EFFF] dark:bg-slate-900/50 border-t border-[#9D72FF]/10 font-['Newsreader'] text-base text-slate-700 dark:text-slate-300">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 px-12 max-w-7xl mx-auto text-center md:text-left">
+<div>
+<img src="../assets/WhatsApp_Image_2026-04-20_at_19.25.35-removebg-preview.png" alt="MD Astra Logo" class="h-24 w-auto object-contain mb-4 mix-blend-multiply dark:mix-blend-normal">
+<p class="max-w-sm mb-8 opacity-70">Empowering the world's leading minds to reach their full potential through strategic digital scaling and legacy building.</p>
+<p>© 2024 MD Astra Digital. All rights reserved.</p>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div class="flex flex-col gap-4">
+<span class="font-bold text-on-surface mb-2">Platform</span>
+<a class="text-slate-500 hover:text-[#9D72FF] hover:translate-x-1 transition-transform duration-200" href="../book_an_appointment/code.html">Growth Framework</a>
+<a class="text-slate-500 hover:text-[#9D72FF] hover:translate-x-1 transition-transform duration-200" href="../book_an_appointment/code.html">Case Studies</a>
+<a class="text-slate-500 hover:text-[#9D72FF] hover:translate-x-1 transition-transform duration-200" href="../book_an_appointment/code.html">Our Method</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-bold text-on-surface mb-2">Company</span>
+<a class="text-slate-500 hover:text-[#9D72FF] hover:translate-x-1 transition-transform duration-200" href="../book_an_appointment/code.html">Privacy Policy</a>
+<a class="text-slate-500 hover:text-[#9D72FF] hover:translate-x-1 transition-transform duration-200" href="../book_an_appointment/code.html">Terms of Service</a>
+<a class="text-slate-500 hover:text-[#9D72FF] hover:translate-x-1 transition-transform duration-200" href="../book_an_appointment/code.html">Contact</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

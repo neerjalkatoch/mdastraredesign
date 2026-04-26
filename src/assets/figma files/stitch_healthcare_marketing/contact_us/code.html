@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | MD Astra</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..800;1,6..72,400..800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    }
+
+    .brand-serif {
+      font-family: Newsreader, Georgia, serif;
+    }
+  </style>
+  <link rel="stylesheet" href="../assets/css/site.css" />
+  <script src="../assets/js/site.js" defer></script>
+</head>
+<body class="bg-white text-slate-800 antialiased">
+  <header class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-purple-50 shadow-sm transition-all duration-300">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 md:px-8 py-4 h-20">
+      <a href="../homepage_luminous/code.html" class="flex items-center" aria-label="MD Astra Home">
+        <img src="../assets/WhatsApp_Image_2026-04-20_at_19.25.35-removebg-preview.png" alt="MD Astra Logo" class="h-14 w-auto object-contain" />
+      </a>
+      <nav class="hidden md:flex gap-8 items-center">
+        <a class="text-slate-600 hover:text-purple-600 font-medium" href="../homepage_luminous/code.html">Home</a>
+        <a class="text-slate-600 hover:text-purple-600 font-medium" href="../services_luminous/code.html">Services</a>
+        <a class="text-slate-600 hover:text-purple-600 font-medium" href="../book_an_appointment/code.html">Book Appointment</a>
+        <a class="text-purple-700 font-semibold" href="../contact_us/code.html">Contact Us</a>
+      </nav>
+      <a href="../book_an_appointment/code.html" class="bg-purple-600 text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-purple-700 transition-colors">Get Started</a>
+    </div>
+  </header>
+
+  <main class="pt-28">
+    <section class="max-w-7xl mx-auto px-6 md:px-8 py-14">
+      <div class="grid lg:grid-cols-2 gap-12 items-start">
+        <div>
+          <p class="uppercase tracking-[0.18em] text-xs text-purple-700 font-semibold mb-4">Contact MD Astra</p>
+          <h1 class="brand-serif text-5xl md:text-6xl leading-tight text-slate-900 mb-6">Let's Build Your Next Growth Engine</h1>
+          <p class="text-lg text-slate-600 max-w-xl mb-8">Tell us your goals and current challenges. Our strategy team will send a custom growth plan with channel recommendations and timeline.</p>
+
+          <div class="space-y-4">
+            <a href="tel:+19195551234" class="flex items-center gap-3 p-4 border border-slate-200 rounded-xl hover:border-purple-300 transition-colors">
+              <span class="text-purple-700 text-xl">Call</span>
+              <span class="font-medium">+1 (919) 555-1234</span>
+            </a>
+            <a href="mailto:hello@mdastra.com" class="flex items-center gap-3 p-4 border border-slate-200 rounded-xl hover:border-purple-300 transition-colors">
+              <span class="text-purple-700 text-xl">Email</span>
+              <span class="font-medium">hello@mdastra.com</span>
+            </a>
+            <a href="../book_an_appointment/code.html" class="flex items-center gap-3 p-4 border border-slate-200 rounded-xl hover:border-purple-300 transition-colors">
+              <span class="text-purple-700 text-xl">Schedule</span>
+              <span class="font-medium">Book a strategy appointment</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-slate-50 rounded-2xl border border-slate-200 p-6 md:p-8">
+          <h2 class="brand-serif text-3xl text-slate-900 mb-6">Send Us a Message</h2>
+          <form action="mailto:hello@mdastra.com" method="post" enctype="text/plain" class="space-y-5">
+            <div>
+              <label for="name" class="block text-sm font-medium text-slate-700 mb-2">Full Name</label>
+              <input id="name" name="name" type="text" required class="w-full rounded-xl border-slate-300 focus:border-purple-500 focus:ring-purple-500" placeholder="Your full name" />
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium text-slate-700 mb-2">Business Email</label>
+              <input id="email" name="email" type="email" required class="w-full rounded-xl border-slate-300 focus:border-purple-500 focus:ring-purple-500" placeholder="you@company.com" />
+            </div>
+            <div>
+              <label for="service" class="block text-sm font-medium text-slate-700 mb-2">Service Needed</label>
+              <select id="service" name="service" class="w-full rounded-xl border-slate-300 focus:border-purple-500 focus:ring-purple-500">
+                <option value="SEO">SEO</option>
+                <option value="Website Development">Website Development</option>
+                <option value="Social Media Marketing">Social Media Marketing</option>
+                <option value="Paid Media">Paid Media</option>
+                <option value="Full Growth Strategy">Full Growth Strategy</option>
+              </select>
+            </div>
+            <div>
+              <label for="message" class="block text-sm font-medium text-slate-700 mb-2">Project Details</label>
+              <textarea id="message" name="message" rows="5" required class="w-full rounded-xl border-slate-300 focus:border-purple-500 focus:ring-purple-500" placeholder="Tell us what you want to achieve in the next 90 days"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-purple-600 text-white py-3.5 rounded-xl font-semibold hover:bg-purple-700 transition-colors">Submit Inquiry</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-200 py-10 px-6 md:px-8 mt-12">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-5">
+      <a href="../homepage_luminous/code.html" class="flex items-center gap-3">
+        <img src="../assets/WhatsApp_Image_2026-04-20_at_19.25.35-removebg-preview.png" alt="MD Astra Logo" class="h-12 w-auto object-contain" />
+        <span class="text-sm text-slate-500">High-Performance Digital Marketing</span>
+      </a>
+      <div class="flex items-center gap-5 text-sm">
+        <a href="../services_luminous/code.html" class="text-slate-600 hover:text-purple-700">Services</a>
+        <a href="../book_an_appointment/code.html" class="text-slate-600 hover:text-purple-700">Appointment</a>
+        <a href="../contact_us/code.html" class="text-slate-600 hover:text-purple-700">Contact Us</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fdf7ff;
+            color: #1d1929;
+            scroll-behavior: smooth;
+        }
+        .editorial-shadow {
+            box-shadow: 0 4px 20px -10px rgba(157, 114, 255, 0.08);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface": "#1d1929",
+                        "on-tertiary-fixed-variant": "#5f4100",
+                        "on-error-container": "#93000a",
+                        "on-surface-variant": "#4a4454",
+                        "surface": "#fdf7ff",
+                        "tertiary-container": "#9a6c00",
+                        "on-secondary-container": "#656370",
+                        "surface-container": "#f3eaff",
+                        "error-container": "#ffdad6",
+                        "outline-variant": "#cbc3d6",
+                        "primary-fixed": "#e9ddff",
+                        "secondary": "#5f5d6a",
+                        "error": "#ba1a1a",
+                        "surface-container-high": "#ede4fb",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed-variant": "#5520b3",
+                        "on-primary-fixed": "#23005b",
+                        "surface-tint": "#6d40cc",
+                        "primary": "#6b3dca",
+                        "on-secondary": "#ffffff",
+                        "surface-variant": "#e7dff6",
+                        "secondary-container": "#e4e0f0",
+                        "on-secondary-fixed-variant": "#474552",
+                        "inverse-surface": "#322e3f",
+                        "outline": "#7b7485",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed": "#1b1a25",
+                        "on-primary-container": "#fffbff",
+                        "tertiary": "#7b5500",
+                        "primary-fixed-dim": "#d1bcff",
+                        "secondary-fixed-dim": "#c8c4d4",
+                        "surface-bright": "#fdf7ff",
+                        "on-tertiary-fixed": "#271900",
+                        "surface-container-highest": "#e7dff6",
+                        "surface-container-low": "#f8f1ff",
+                        "primary-container": "#8458e4",
+                        "on-background": "#1d1929",
+                        "on-tertiary-container": "#fffbff",
+                        "inverse-on-surface": "#f5eeff",
+                        "secondary-fixed": "#e4e0f0",
+                        "on-error": "#ffffff",
+                        "inverse-primary": "#d1bcff",
+                        "background": "#fdf7ff",
+                        "tertiary-fixed-dim": "#fbbb45",
+                        "tertiary-fixed": "#ffdeab",
+                        "surface-dim": "#dfd6ed",
+                        "on-primary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "32px",
+                        "unit": "8px",
+                        "container-max": "1200px",
+                        "margin-page": "64px",
+                        "section-gap": "128px"
+                    },
+                    "fontFamily": {
+                        "headline-sm": ["Newsreader"],
+                        "label-caps": ["Inter"],
+                        "button": ["Inter"],
+                        "body-md": ["Newsreader"],
+                        "display-lg": ["Newsreader"],
+                        "headline-md": ["Newsreader"],
+                        "body-lg": ["Newsreader"]
+                    },
+                    "fontSize": {
+                        "headline-sm": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                        "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.08em", "fontWeight": "600"}],
+                        "button": ["14px", {"lineHeight": "1", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "headline-md": ["32px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                        "body-lg": ["20px", {"lineHeight": "1.6", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+<link rel="stylesheet" href="../assets/css/site.css" />
+<script src="../assets/js/site.js" defer></script>
+</head>
+<body class="font-body-md text-on-surface">
+<!-- Navigation Header -->
+<header class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-purple-50 shadow-sm transition-all duration-300">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-8 py-4 h-20">
+        <a href="../homepage_luminous/code.html" class="flex items-center">
+            <img src="../assets/WhatsApp_Image_2026-04-20_at_19.25.35-removebg-preview.png" alt="MD Astra Logo" class="h-14 w-auto object-contain mix-blend-multiply dark:mix-blend-normal">
+        </a>
+        <nav class="hidden md:flex gap-8 items-center">
+            <a class="text-slate-600 hover:text-purple-600 font-medium transition-colors duration-200" href="../homepage_luminous/code.html">Home</a>
+            <a class="text-slate-600 hover:text-purple-600 font-medium transition-colors duration-200" href="../book_an_appointment/code.html">About Us</a>
+            
+            <!-- Services Dropdown -->
+            <div class="relative group">
+                <button class="flex items-center gap-1 text-slate-600 hover:text-purple-600 font-medium transition-colors duration-200 py-2">
+                    Services <span class="material-symbols-outlined text-[20px]">expand_more</span>
+                </button>
+                <div class="absolute left-0 top-full mt-2 w-64 bg-white rounded-xl shadow-xl border border-purple-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-left -translate-y-2 group-hover:translate-y-0 overflow-hidden">
+                    <div class="py-2">
+                        <a href="../seo_services/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">SEO Service</a>
+                        <a href="../website_development/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Website Development</a>
+                        <a href="../social_media_marketing/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Social Media Marketing</a>
+                        <a href="../gmb_management/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">GMB Management</a>
+                        <a href="../content_marketing/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Content Marketing</a>
+                        <a href="../amazon_ghl_marketing/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Amazon & GHL Marketing</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Industries Dropdown -->
+            <div class="relative group">
+                <button class="flex items-center gap-1 text-slate-600 hover:text-purple-600 font-medium transition-colors duration-200 py-2">
+                    Industries <span class="material-symbols-outlined text-[20px]">expand_more</span>
+                </button>
+                <div class="absolute left-0 top-full mt-2 w-64 bg-white rounded-xl shadow-xl border border-purple-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-left -translate-y-2 group-hover:translate-y-0 overflow-hidden">
+                    <div class="py-2">
+                        <a href="../real_estate_marketing_bright/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Real Estate</a>
+                        <a href="../healthcare_marketing_bright/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Healthcare</a>
+                        <a href="../restaurant_marketing_bright/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Restaurants</a>
+                        <a href="../ecommerce_marketing_bright/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Ecommerce</a>
+                        <a href="../legal_marketing_bright/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Legal Services</a>
+                        <a href="../education_marketing_bright/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Education & Coaching</a>
+                        <a href="../local_services_marketing_bright/code.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-700">Local Services</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <a href="../book_an_appointment/code.html" class="bg-purple-600 text-white px-6 py-2.5 rounded-full font-medium text-sm hover:bg-purple-700 transition-colors shadow-sm">Get Started</a>
+    </div>
+</header>
+<main class="pt-24 overflow-x-hidden">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-8 py-32 flex flex-col items-center text-center">
+<span class="font-label-caps text-label-caps text-primary uppercase mb-6 tracking-widest">Growth Engineering for Law Firms</span>
+<h1 class="font-display-lg text-[64px] md:text-[84px] leading-[1.05] max-w-4xl mb-8">
+                High-Intent Growth for <span class="italic text-primary">Elite Law Firms.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-12">
+                We bridge the gap between legal expertise and digital dominance. Our proprietary framework ensures your firm captures the highest-value cases through scientific precision.
+            </p>
+<div class="flex gap-4">
+<button class="bg-[#9D72FF] text-white px-8 py-4 rounded-full font-button text-button hover:opacity-90 transition-all">Book a Growth Audit</button>
+<button class="border border-[#9D72FF] text-[#9D72FF] px-8 py-4 rounded-full font-button text-button hover:bg-[#F3EFFF] transition-all">View Our Work</button>
+</div>
+</section>
+<!-- Service Grid (Bento Style) -->
+<section class="max-w-7xl mx-auto px-8 mb-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<div class="md:col-span-8 bg-white p-12 border border-surface-container-high flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-primary mb-6 text-4xl" data-icon="balance">balance</span>
+<h3 class="font-headline-md text-headline-md mb-4">LSAs &amp; Search Engine Dominance</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-lg">
+                            Go beyond simple keywords. We engineer high-intent search campaigns that prioritize Local Services Ads and PPC to capture clients at the exact moment of legal need.
+                        </p>
+</div>
+<img class="mt-8 rounded-lg aspect-video object-cover" data-alt="Close-up of a wooden gavel and law books on a mahogany table with soft morning light through a window" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuiS2XscyQPS34zAVFFG2sOPpolZr-ZMmnqY0bPylomxv5muFLowUZ0qj-9R6ABBDFXGUkHIIHRD4HVgAowXnZsQCvM10i0u_wtK3fobop0JH0k_OjlinHM7niNOKG0qPDJ-LdEAj1oMtB3ggCPPnY7zj1lmAeq4e9jVsjYME6uxD2qLp1pXI6j-jp-pWG-UiIyjtHL0Oh1B-FD03dWLNyAU9ZdglYWcTvCZnLAmTpyVBQZAeNgwbshff4J8c0Szxd3vl9aerhM_Y"/>
+</div>
+<div class="md:col-span-4 bg-[#F3EFFF] p-12 border border-primary/10">
+<span class="material-symbols-outlined text-primary mb-6 text-4xl" data-icon="verified">verified</span>
+<h3 class="font-headline-md text-headline-md mb-4">Authority Building</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">
+                        Establishing your partners as thought leaders through strategic PR and elite content placement.
+                    </p>
+<div class="space-y-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="check_circle">check_circle</span>
+<span class="font-label-caps text-xs">TIER-1 MEDIA PLACEMENT</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="check_circle">check_circle</span>
+<span class="font-label-caps text-xs">LEGAL JOURNAL SYNDICATION</span>
+</div>
+</div>
+</div>
+<div class="md:col-span-4 bg-white p-12 border border-surface-container-high">
+<span class="material-symbols-outlined text-primary mb-6 text-4xl" data-icon="psychology">psychology</span>
+<h3 class="font-headline-md text-headline-md mb-4">Conversion Intelligence</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        AI-driven analysis of your intake funnel to ensure no high-value lead is ever lost.
+                    </p>
+</div>
+<div class="md:col-span-8 bg-on-surface text-white p-12 flex items-center gap-12">
+<div class="flex-1">
+<h3 class="font-headline-md text-headline-md text-white mb-4">Ready to scale your billables?</h3>
+<p class="font-body-md text-slate-400 mb-6">Join 40+ elite firms who have re-engineered their growth with Astra.</p>
+<button class="bg-[#9D72FF] text-white px-6 py-3 rounded-full font-button">Start Now</button>
+</div>
+<div class="hidden lg:block w-1/3">
+<img class="rounded-lg grayscale opacity-50" data-alt="Modern architectural detail of a glass law building reflecting a clear blue sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMTl6SDuf1EQWcVQwALflj07EP7oCDQRiMg0WaW1WvVVwbOPpmZwMPrSwdKC40CBMHyQFZuv2_xGrpG_KIzHTwvCU3jCKOJTyhNGcE2QajCUpxVx1LgJvIXShWVHNub_HP0Yzp_h6v5xPM79VfW_gBLkpZQ7_e_HUSaHAQzNEYbCheQUYUhQjfTB2_CjYZWe8nZyLJta5m_CAybyEPC27dy-BFvWbIZInTE-c4KhYa7WS5Tg3Zgq0r6vUqziFZA-ZT9ibsb9y4rds"/>
+</div>
+</div>
+</div>
+</section>
+<!-- The Astra Growth Framework -->
+<section class="bg-surface-container-low py-32 border-y border-surface-container-high">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-24">
+<span class="font-label-caps text-primary mb-4 block">THE ROADMAP</span>
+<h2 class="font-headline-md text-[48px] leading-tight">The Astra <span class="italic">Growth Framework</span></h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-y-20 gap-x-12">
+<div class="relative">
+<span class="font-display-lg text-primary/10 absolute -top-12 -left-4 select-none">01</span>
+<h4 class="font-headline-sm text-headline-sm mb-4 relative z-10">Diagnostic Audit</h4>
+<p class="font-body-md text-on-surface-variant">Comprehensive analysis of existing digital footprint, competitor gaps, and search landscape.</p>
+</div>
+<div class="relative">
+<span class="font-display-lg text-primary/10 absolute -top-12 -left-4 select-none">02</span>
+<h4 class="font-headline-sm text-headline-sm mb-4 relative z-10">Infrastructure Hardening</h4>
+<p class="font-body-md text-on-surface-variant">Upgrading technical SEO and landing page UX to support high-intent traffic surges.</p>
+</div>
+<div class="relative">
+<span class="font-display-lg text-primary/10 absolute -top-12 -left-4 select-none">03</span>
+<h4 class="font-headline-sm text-headline-sm mb-4 relative z-10">Market Capture</h4>
+<p class="font-body-md text-on-surface-variant">Deployment of precision LSA and PPC campaigns targeting high-settlement practice areas.</p>
+</div>
+<div class="relative">
+<span class="font-display-lg text-primary/10 absolute -top-12 -left-4 select-none">04</span>
+<h4 class="font-headline-sm text-headline-sm mb-4 relative z-10">Authority Moat</h4>
+<p class="font-body-md text-on-surface-variant">Deep content cycles and PR placements to ensure brand dominance over competitors.</p>
+</div>
+<div class="relative">
+<span class="font-display-lg text-primary/10 absolute -top-12 -left-4 select-none">05</span>
+<h4 class="font-headline-sm text-headline-sm mb-4 relative z-10">Intake Optimization</h4>
+<p class="font-body-md text-on-surface-variant">Refining lead handling through CRM integration and automated follow-up logic.</p>
+</div>
+<div class="relative">
+<span class="font-display-lg text-primary/10 absolute -top-12 -left-4 select-none">06</span>
+<h4 class="font-headline-sm text-headline-sm mb-4 relative z-10">Scale &amp; Iterate</h4>
+<p class="font-body-md text-on-surface-variant">Continuous data-backed scaling of budget into highest performing legal segments.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Editorial Section -->
+<section class="max-w-7xl mx-auto px-8 py-32 grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+<div class="order-2 md:order-1">
+<img class="rounded-lg shadow-2xl" data-alt="Two professional lawyers shaking hands in a bright, modern office with minimalist decor and tall windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYjpJ4xa5_2a0VNb7S1PPBvQg_tQBYULkWdSVTOy6LnJ8qTXT3LqVEeJxLAo7tMBFSUuzpZ6T3Hu3JF0JB51RaiktOAkynxW63O6O2uEhGTcUib_FjP_FmwAFEJMlVecQmsTiENqiKA7gFwhW3HpFOVvLEml_DAGUUcG9QklRfu8d8ntMolQbI_WRw_FQOwzg3WGavT3E-WeD_EUc2ssqHx5FaRFSjjRkr7x65RfGGR0xoXMthcxmYMT59K5A9MaK7HdLv3Zr2mLo"/>
+</div>
+<div class="order-1 md:order-2">
+<h2 class="font-headline-md text-[40px] mb-8">The Difference Between Marketing and <span class="italic text-primary">Growth Engineering.</span></h2>
+<div class="border-l-4 border-primary pl-8 py-2 mb-12">
+<p class="font-headline-sm text-headline-sm italic text-on-surface-variant">"Standard agencies deliver clicks. We deliver high-intent dossiers that convert into retained clients."</p>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                    Legal services require a level of nuance that traditional marketing agencies often miss. We treat legal growth as an engineering problem—optimizing for specific case types, jurisdiction nuances, and ethical compliance.
+                </p>
+<ul class="space-y-4 font-body-md text-on-surface">
+<li class="flex items-center gap-3"><span class="text-primary font-bold">→</span> Scientific attribution for every dollar spent</li>
+<li class="flex items-center gap-3"><span class="text-primary font-bold">→</span> Practice-area specific lead filtering</li>
+<li class="flex items-center gap-3"><span class="text-primary font-bold">→</span> Brand protection and ethical adherence</li>
+</ul>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="bg-white py-32 overflow-hidden">
+<div class="max-w-7xl mx-auto px-8 text-center mb-20">
+<h2 class="font-headline-md text-headline-md">Trusted by Managing Partners</h2>
+</div>
+<div class="flex gap-8 px-8 overflow-x-auto pb-8 snap-x no-scrollbar">
+<div class="min-w-[400px] snap-center bg-surface-container-low p-10 border border-surface-container-high">
+<div class="flex text-[#9D72FF] mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-lg text-on-surface-variant mb-8">"The shift from standard PPC to Astra's growth framework was immediate. Our cost-per-case dropped by 42% in the first quarter."</p>
+<div>
+<p class="font-label-caps text-on-surface">ARTHUR STERLING</p>
+<p class="text-sm text-on-surface-variant italic">Managing Partner, Sterling &amp; Associates</p>
+</div>
+</div>
+<div class="min-w-[400px] snap-center bg-surface-container-low p-10 border border-surface-container-high">
+<div class="flex text-[#9D72FF] mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-lg text-on-surface-variant mb-8">"Their understanding of the PI landscape is unmatched. They don't just find leads; they find the right leads for our firm's size."</p>
+<div>
+<p class="font-label-caps text-on-surface">ELENA VANCE</p>
+<p class="text-sm text-on-surface-variant italic">Founder, Vance Law Group</p>
+</div>
+</div>
+<div class="min-w-[400px] snap-center bg-surface-container-low p-10 border border-surface-container-high">
+<div class="flex text-[#9D72FF] mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-lg text-on-surface-variant mb-8">"MD Astra treats our firm's growth with the same rigor we apply to our litigation. Highly recommended for elite practices."</p>
+<div>
+<p class="font-label-caps text-on-surface">JULIAN MORGAN</p>
+<p class="text-sm text-on-surface-variant italic">Chief of Staff, Morgan &amp; Chen</p>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ -->
+<section class="max-w-3xl mx-auto px-8 py-32">
+<h2 class="font-headline-md text-headline-md text-center mb-16">Common Enquiries</h2>
+<div class="space-y-4">
+<details class="group bg-white border border-surface-container-high open:border-primary/20">
+<summary class="flex justify-between items-center p-6 cursor-pointer list-none font-headline-sm text-headline-sm">
+<span>Do you work with firms in all states?</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="p-6 pt-0 font-body-md text-on-surface-variant">
+                        Yes, we operate nationwide, ensuring all digital campaigns are compliant with individual State Bar Association advertising rules and ethics requirements.
+                    </div>
+</details>
+<details class="group bg-white border border-surface-container-high open:border-primary/20">
+<summary class="flex justify-between items-center p-6 cursor-pointer list-none font-headline-sm text-headline-sm">
+<span>How soon can we expect results?</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="p-6 pt-0 font-body-md text-on-surface-variant">
+                        Initial high-intent traffic typically begins within 21 days of deployment. Full framework maturity and ROI stabilization usually occur between months 3 and 5.
+                    </div>
+</details>
+<details class="group bg-white border border-surface-container-high open:border-primary/20">
+<summary class="flex justify-between items-center p-6 cursor-pointer list-none font-headline-sm text-headline-sm">
+<span>What practice areas do you specialize in?</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="p-6 pt-0 font-body-md text-on-surface-variant">
+                        We excel in Personal Injury, Mass Torts, Employment Law, Family Law, and High-Net-Worth Criminal Defense.
+                    </div>
+</details>
+</div>
+</section>
+<!-- Contact Form -->
+<section class="max-w-7xl mx-auto px-8 mb-section-gap" id="contact">
+<div class="bg-[#F3EFFF] rounded-3xl p-16 md:p-24 flex flex-col md:flex-row gap-24">
+<div class="flex-1">
+<h2 class="font-display-lg text-display-lg mb-8">Secure Your <span class="italic text-primary">Competitive Edge.</span></h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12">
+                        We limit our client intake by jurisdiction to ensure zero conflict of interest. Schedule your discovery call today to check availability.
+                    </p>
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+</div>
+<span class="font-body-md font-medium">growth@mdastra.com</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="location_on">location_on</span>
+</div>
+<span class="font-body-md font-medium">One World Trade, New York, NY</span>
+</div>
+</div>
+</div>
+<div class="flex-1 bg-white p-12 shadow-xl">
+<form class="space-y-8">
+<div>
+<label class="block font-label-caps text-label-caps mb-2">FULL NAME</label>
+<input class="w-full bg-white border-b-2 border-[#F3EFFF] focus:border-[#9D72FF] outline-none py-3 px-0 transition-all font-body-md" placeholder="Partner Name" type="text"/>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps mb-2">FIRM NAME</label>
+<input class="w-full bg-white border-b-2 border-[#F3EFFF] focus:border-[#9D72FF] outline-none py-3 px-0 transition-all font-body-md" placeholder="Sterling &amp; Associates" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div>
+<label class="block font-label-caps text-label-caps mb-2">EMAIL</label>
+<input class="w-full bg-white border-b-2 border-[#F3EFFF] focus:border-[#9D72FF] outline-none py-3 px-0 transition-all font-body-md" placeholder="name@firm.com" type="email"/>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps mb-2">PRACTICE AREA</label>
+<select class="w-full bg-white border-b-2 border-[#F3EFFF] focus:border-[#9D72FF] outline-none py-3 px-0 transition-all font-body-md">
+<option>Personal Injury</option>
+<option>Family Law</option>
+<option>Criminal Defense</option>
+<option>Other</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps mb-2">MESSAGE</label>
+<textarea class="w-full bg-white border-b-2 border-[#F3EFFF] focus:border-[#9D72FF] outline-none py-3 px-0 transition-all font-body-md" placeholder="How can we help you scale?" rows="4"></textarea>
+</div>
+<button class="w-full bg-[#9D72FF] text-white py-4 font-button text-button hover:opacity-90 transition-all">Request Growth Audit</button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-24 mt-32 bg-[#F3EFFF] dark:bg-slate-900/50 border-t border-[#9D72FF]/10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 px-12 max-w-7xl mx-auto text-center md:text-left">
+<div>
+<div class="font-['Newsreader'] font-bold text-[#9D72FF] text-2xl mb-6">MD Astra Digital</div>
+<p class="font-['Newsreader'] text-base text-slate-700 dark:text-slate-300 max-w-sm">
+                    Engineering growth for the world's most ambitious professional service firms.
+                </p>
+</div>
+<div class="flex flex-col md:flex-row gap-12 md:justify-end">
+<div class="flex flex-col gap-4">
+<span class="font-label-caps text-xs text-slate-500 mb-2">NAVIGATION</span>
+<a class="text-slate-500 hover:text-[#9D72FF] hover:translate-x-1 transition-transform duration-200 font-['Newsreader']" href="../book_an_appointment/code.html">Growth Framework</a>
+<a class="text-slate-500 hover:text-[#9D72FF] hover:translate-x-1 transition-transform duration-200 font-['Newsreader']" href="../book_an_appointment/code.html">Contact</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-label-caps text-xs text-slate-500 mb-2">LEGAL</span>
+<a class="text-slate-500 hover:text-[#9D72FF] hover:translate-x-1 transition-transform duration-200 font-['Newsreader']" href="../book_an_appointment/code.html">Privacy Policy</a>
+<a class="text-slate-500 hover:text-[#9D72FF] hover:translate-x-1 transition-transform duration-200 font-['Newsreader']" href="../book_an_appointment/code.html">Terms of Service</a>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-12 mt-20 pt-8 border-t border-slate-200 dark:border-slate-800 text-center">
+<p class="font-['Newsreader'] text-sm text-slate-500">© 2024 MD Astra Digital. All rights reserved.</p>
+</div>
+</footer>
+</body></html>
